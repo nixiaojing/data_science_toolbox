@@ -1,0 +1,79 @@
+\doxysection{classifier\+\_\+algorithm.\+\_\+heap Class Reference}
+\hypertarget{classclassifier__algorithm_1_1__heap}{}\label{classclassifier__algorithm_1_1__heap}\index{classifier\_algorithm.\_heap@{classifier\_algorithm.\_heap}}
+
+
+Creaet a heap to efficiently search the smallest k distance.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classclassifier__algorithm_1_1__heap_a3a5c0be154caf1f07f009316004d4269}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classclassifier__algorithm_1_1__heap_a060f5d1ee09941082c1c68dfd45605dc}{data}})
+\item 
+\mbox{\hyperlink{classclassifier__algorithm_1_1__heap_a0f76ad0e44b853debf1e57729763c5d2}{heappushpop}} (self, element, k)
+\item 
+\mbox{\hyperlink{classclassifier__algorithm_1_1__heap_ab4ac89271cb7918f26732923adc5d47f}{heap\+\_\+sort}} (self, k)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclassifier__algorithm_1_1__heap_a4efb096d2335c79d112f806d15e7e75d}\label{classclassifier__algorithm_1_1__heap_a4efb096d2335c79d112f806d15e7e75d} 
+{\bfseries top\+\_\+k}
+\begin{DoxyCompactList}\small\item\em save KNN with largest distance in front. \end{DoxyCompactList}\item 
+\Hypertarget{classclassifier__algorithm_1_1__heap_a060f5d1ee09941082c1c68dfd45605dc}\label{classclassifier__algorithm_1_1__heap_a060f5d1ee09941082c1c68dfd45605dc} 
+{\bfseries data}
+\begin{DoxyCompactList}\small\item\em the input data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclassifier__algorithm_1_1__heap_aa872bb2492822bba6bd66b3e4c905868}\label{classclassifier__algorithm_1_1__heap_aa872bb2492822bba6bd66b3e4c905868} 
+{\bfseries \+\_\+heapify} (self, node)
+\begin{DoxyCompactList}\small\item\em Sort from bottom to top. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creaet a heap to efficiently search the smallest k distance. 
+
+It is a maximum heap that we always put the farest point on top. If the new point is closer than the farest one, we pop the top one and push the new one in. computation complixity O(\+Klog\+N) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classclassifier__algorithm_1_1__heap_a3a5c0be154caf1f07f009316004d4269}\label{classclassifier__algorithm_1_1__heap_a3a5c0be154caf1f07f009316004d4269} 
+\index{classifier\_algorithm.\_heap@{classifier\_algorithm.\_heap}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!classifier\_algorithm.\_heap@{classifier\_algorithm.\_heap}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily classifier\+\_\+algorithm.\+\_\+heap.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & list\+: the input data \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classclassifier__algorithm_1_1__heap_ab4ac89271cb7918f26732923adc5d47f}\label{classclassifier__algorithm_1_1__heap_ab4ac89271cb7918f26732923adc5d47f} 
+\index{classifier\_algorithm.\_heap@{classifier\_algorithm.\_heap}!heap\_sort@{heap\_sort}}
+\index{heap\_sort@{heap\_sort}!classifier\_algorithm.\_heap@{classifier\_algorithm.\_heap}}
+\doxysubsubsection{\texorpdfstring{heap\_sort()}{heap\_sort()}}
+{\footnotesize\ttfamily classifier\+\_\+algorithm.\+\_\+heap.\+heap\+\_\+sort (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{k }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}sort top k
+\end{DoxyVerb}
+ \Hypertarget{classclassifier__algorithm_1_1__heap_a0f76ad0e44b853debf1e57729763c5d2}\label{classclassifier__algorithm_1_1__heap_a0f76ad0e44b853debf1e57729763c5d2} 
+\index{classifier\_algorithm.\_heap@{classifier\_algorithm.\_heap}!heappushpop@{heappushpop}}
+\index{heappushpop@{heappushpop}!classifier\_algorithm.\_heap@{classifier\_algorithm.\_heap}}
+\doxysubsubsection{\texorpdfstring{heappushpop()}{heappushpop()}}
+{\footnotesize\ttfamily classifier\+\_\+algorithm.\+\_\+heap.\+heappushpop (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{element,  }\item[{}]{k }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & tuple\+: the new point \mbox{[}(distance, label), ...\mbox{]} \\
+\hline
+{\em k} & int\+: the length of heap \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classifier\+\_\+algorithm.\+py\end{DoxyCompactItemize}

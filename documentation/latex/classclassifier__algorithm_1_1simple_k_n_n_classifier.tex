@@ -1,0 +1,194 @@
+\doxysection{classifier\+\_\+algorithm.\+simple\+KNNClassifier Class Reference}
+\hypertarget{classclassifier__algorithm_1_1simple_k_n_n_classifier}{}\label{classclassifier__algorithm_1_1simple_k_n_n_classifier}\index{classifier\_algorithm.simpleKNNClassifier@{classifier\_algorithm.simpleKNNClassifier}}
+
+
+Perform simple k\+NN classifier For each single new point, the computation complixity is O(\+Klog\+N).  
+
+
+Inheritance diagram for classifier\+\_\+algorithm.\+simple\+KNNClassifier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classclassifier__algorithm_1_1simple_k_n_n_classifier}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classclassifier__algorithm_1_1simple_k_n_n_classifier_a54d5385bc2842bbe8f8da85d6c91d4be}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\begin{DoxyCompactList}\small\item\em Initialize the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classclassifier__algorithm_1_1simple_k_n_n_classifier_a23c5fc08c1ab79a63761c21f277966e0}{fit}} (self, \mbox{\hyperlink{classclassifier__algorithm_1_1_classifier_a97933cab2a5b5da0aeb6e39519425c29}{data}}, label)
+\begin{DoxyCompactList}\small\item\em provide data and label to fit KNN model. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classclassifier__algorithm_1_1simple_k_n_n_classifier_a26f351898d6327c55e73d51732ff8c90}{dist\+\_\+sqr}} (self, \mbox{\hyperlink{classclassifier__algorithm_1_1_classifier_aebccbbd27cd01c19cfc7757e903d746d}{test\+Data}})
+\item 
+\mbox{\hyperlink{classclassifier__algorithm_1_1simple_k_n_n_classifier_a98eaf1853bfab25fb593152cce02e369}{test}} (self, \mbox{\hyperlink{classclassifier__algorithm_1_1_classifier_aebccbbd27cd01c19cfc7757e903d746d}{test\+Data}}, \mbox{\hyperlink{classclassifier__algorithm_1_1_classifier_adc8099dd4ad61550409ddb8a78d9e10f}{k}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classclassifier__algorithm_1_1_classifier}{classifier\+\_\+algorithm.\+Classifier}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classclassifier__algorithm_1_1_classifier_a056ba00947e8c133290da6b9786c6d66}{train}} (self, training\+Data, true\+Labels)
+\begin{DoxyCompactList}\small\item\em Store the training data and labels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclassifier__algorithm_1_1simple_k_n_n_classifier_af65b02fbccd9f6831cd3c6aedeeccd2c}\label{classclassifier__algorithm_1_1simple_k_n_n_classifier_af65b02fbccd9f6831cd3c6aedeeccd2c} 
+{\bfseries scale}
+\begin{DoxyCompactList}\small\item\em variance on each column, used for normalization \end{DoxyCompactList}\item 
+\Hypertarget{classclassifier__algorithm_1_1simple_k_n_n_classifier_a462aaa6d0da495449f939fb63c530e9f}\label{classclassifier__algorithm_1_1simple_k_n_n_classifier_a462aaa6d0da495449f939fb63c530e9f} 
+{\bfseries label}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classclassifier__algorithm_1_1_classifier}{classifier\+\_\+algorithm.\+Classifier}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries data}
+\begin{DoxyCompactList}\small\item\em the input data without labels \end{DoxyCompactList}\item 
+{\bfseries label}
+\begin{DoxyCompactList}\small\item\em the true training label \end{DoxyCompactList}\item 
+{\bfseries test\+Data}
+\begin{DoxyCompactList}\small\item\em the test data without labels \end{DoxyCompactList}\item 
+{\bfseries testlabel}
+\begin{DoxyCompactList}\small\item\em the true testing label \end{DoxyCompactList}\item 
+{\bfseries k}
+\begin{DoxyCompactList}\small\item\em top k \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classclassifier__algorithm_1_1simple_k_n_n_classifier_aa68a67d004f74f0c64d9406b8e5a275a}{\+\_\+pred}} (self, \mbox{\hyperlink{classclassifier__algorithm_1_1_classifier_aebccbbd27cd01c19cfc7757e903d746d}{test\+Data}}, \mbox{\hyperlink{classclassifier__algorithm_1_1_classifier_adc8099dd4ad61550409ddb8a78d9e10f}{k}})
+\begin{DoxyCompactList}\small\item\em predict label for single point using the mod. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Perform simple k\+NN classifier For each single new point, the computation complixity is O(\+Klog\+N). 
+
+If there are M new points, O(\+MKlog\+N)
+
+To perform a formal computational complexity analysis, let\textquotesingle{}s analyze the three methods in your code\+: {\ttfamily simple\+KNNClassifier}, {\ttfamily Experiment score}, and {\ttfamily Experiment confusion matrix}.
+
+Complexity Analysis We will focus on the time complexity (T(n)) and space complexity (S(n)) for each method. Since we are assuming the worst-\/case scenario, we\textquotesingle{}ll analyze the method in terms of the input size \textquotesingle{}n,\textquotesingle{} which could represent the number of data points or features, depending on the context.
+
+{\bfseries{1. {\ttfamily simple\+KNNClassifier} Method\+:}}
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Time Complexity (T(n))\+:}}
+\item In the {\ttfamily fit} method, it computes the variance for each column, which takes O(n) time for each column.
+\item In the {\ttfamily dist\+\_\+sqr} method, it computes the squared distance for each data point against every training data point, resulting in O(n\texorpdfstring{$^\wedge$}{\string^}2) time complexity.
+\item In the {\ttfamily \+\_\+pred} method, it sorts the distances, which takes O(\+K \texorpdfstring{$\ast$}{*} log(n)) time. It also counts the label frequencies, which takes O(\+K) time.
+\item In the {\ttfamily test} method, if there are M new points, and for each point, it calls {\ttfamily \+\_\+pred}, the overall time complexity is O(M \texorpdfstring{$\ast$}{*} K \texorpdfstring{$\ast$}{*} (log(n) + K)).
+\item {\bfseries{Space Complexity (S(n))\+:}}
+\item The space complexity is mainly determined by storing the training data and labels. It uses additional space for variables like {\ttfamily res}, {\ttfamily heap}, and {\ttfamily cnt}.
+\end{DoxyItemize}
+
+{\bfseries{Tight-\/\+Fit Upperbound Using Big-\/O Notation\+:}}
+
+
+\begin{DoxyEnumerate}
+\item {\ttfamily simple\+KNNClassifier}\+:
+\end{DoxyEnumerate}
+\begin{DoxyItemize}
+\item Time Complexity\+: O(M \texorpdfstring{$\ast$}{*} K \texorpdfstring{$\ast$}{*} (log(n) + K))
+\item Space Complexity\+: O(n)
+\end{DoxyItemize}
+
+{\bfseries{Justification\+:}}
+
+
+\begin{DoxyEnumerate}
+\item The time complexity of {\ttfamily simple\+KNNClassifier} depends on the number of new data points (M), the number of neighbors (K), and the number of training data points (n). In the worst case, it needs to calculate distances for each new point against all training points, making the time complexity O(\+M \texorpdfstring{$\ast$}{*} K \texorpdfstring{$\ast$}{*} n). 
+\end{DoxyEnumerate}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classclassifier__algorithm_1_1simple_k_n_n_classifier_a54d5385bc2842bbe8f8da85d6c91d4be}\label{classclassifier__algorithm_1_1simple_k_n_n_classifier_a54d5385bc2842bbe8f8da85d6c91d4be} 
+\index{classifier\_algorithm.simpleKNNClassifier@{classifier\_algorithm.simpleKNNClassifier}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!classifier\_algorithm.simpleKNNClassifier@{classifier\_algorithm.simpleKNNClassifier}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily classifier\+\_\+algorithm.\+simple\+KNNClassifier.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Initialize the class. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classclassifier__algorithm_1_1_classifier_a491c3170d8ddf28778a9c939aedcb1be}{classifier\+\_\+algorithm.\+Classifier}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classclassifier__algorithm_1_1simple_k_n_n_classifier_aa68a67d004f74f0c64d9406b8e5a275a}\label{classclassifier__algorithm_1_1simple_k_n_n_classifier_aa68a67d004f74f0c64d9406b8e5a275a} 
+\index{classifier\_algorithm.simpleKNNClassifier@{classifier\_algorithm.simpleKNNClassifier}!\_pred@{\_pred}}
+\index{\_pred@{\_pred}!classifier\_algorithm.simpleKNNClassifier@{classifier\_algorithm.simpleKNNClassifier}}
+\doxysubsubsection{\texorpdfstring{\_pred()}{\_pred()}}
+{\footnotesize\ttfamily classifier\+\_\+algorithm.\+simple\+KNNClassifier.\+\_\+pred (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{test\+Data,  }\item[{}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+predict label for single point using the mod. 
+
+find the k closest training samples and return the mode of the k labels associated from the k closest training samples.
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+Data} & dictionary\+: the test data points without labels \\
+\hline
+{\em k} & int\+: the top k closest points\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+predicted labels for one point 
+\end{DoxyReturn}
+\Hypertarget{classclassifier__algorithm_1_1simple_k_n_n_classifier_a26f351898d6327c55e73d51732ff8c90}\label{classclassifier__algorithm_1_1simple_k_n_n_classifier_a26f351898d6327c55e73d51732ff8c90} 
+\index{classifier\_algorithm.simpleKNNClassifier@{classifier\_algorithm.simpleKNNClassifier}!dist\_sqr@{dist\_sqr}}
+\index{dist\_sqr@{dist\_sqr}!classifier\_algorithm.simpleKNNClassifier@{classifier\_algorithm.simpleKNNClassifier}}
+\doxysubsubsection{\texorpdfstring{dist\_sqr()}{dist\_sqr()}}
+{\footnotesize\ttfamily classifier\+\_\+algorithm.\+simple\+KNNClassifier.\+dist\+\_\+sqr (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{test\+Data }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+Data} & dictionary\+: the test data points without labels \{attr\+: value\}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the ordered distance 
+\end{DoxyReturn}
+\Hypertarget{classclassifier__algorithm_1_1simple_k_n_n_classifier_a23c5fc08c1ab79a63761c21f277966e0}\label{classclassifier__algorithm_1_1simple_k_n_n_classifier_a23c5fc08c1ab79a63761c21f277966e0} 
+\index{classifier\_algorithm.simpleKNNClassifier@{classifier\_algorithm.simpleKNNClassifier}!fit@{fit}}
+\index{fit@{fit}!classifier\_algorithm.simpleKNNClassifier@{classifier\_algorithm.simpleKNNClassifier}}
+\doxysubsubsection{\texorpdfstring{fit()}{fit()}}
+{\footnotesize\ttfamily classifier\+\_\+algorithm.\+simple\+KNNClassifier.\+fit (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data,  }\item[{}]{label }\end{DoxyParamCaption})}
+
+
+
+provide data and label to fit KNN model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & dict\+: the training data without labels \\
+\hline
+{\em label} & list\+: the true label of the training data \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classclassifier__algorithm_1_1simple_k_n_n_classifier_a98eaf1853bfab25fb593152cce02e369}\label{classclassifier__algorithm_1_1simple_k_n_n_classifier_a98eaf1853bfab25fb593152cce02e369} 
+\index{classifier\_algorithm.simpleKNNClassifier@{classifier\_algorithm.simpleKNNClassifier}!test@{test}}
+\index{test@{test}!classifier\_algorithm.simpleKNNClassifier@{classifier\_algorithm.simpleKNNClassifier}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily classifier\+\_\+algorithm.\+simple\+KNNClassifier.\+test (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{test\+Data,  }\item[{}]{k }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+Data} & dictionary\+: the test data points without labels \\
+\hline
+{\em k} & int\+: the top k closest points\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+predicted label for all new points. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classclassifier__algorithm_1_1_classifier_a80345d4fbc79266899253978d6bbcd25}{classifier\+\_\+algorithm.\+Classifier}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classifier\+\_\+algorithm.\+py\end{DoxyCompactItemize}

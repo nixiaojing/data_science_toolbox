@@ -1,0 +1,158 @@
+\doxysection{dataset\+\_\+3.\+Time\+Series\+Data\+Set Class Reference}
+\hypertarget{classdataset__3_1_1_time_series_data_set}{}\label{classdataset__3_1_1_time_series_data_set}\index{dataset\_3.TimeSeriesDataSet@{dataset\_3.TimeSeriesDataSet}}
+
+
+Define a time series dataset with methods to manipulate, store or retrieve time-\/series data or related info.  
+
+
+Inheritance diagram for dataset\+\_\+3.\+Time\+Series\+Data\+Set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdataset__3_1_1_time_series_data_set}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdataset__3_1_1_time_series_data_set_ae72e5968bbd33a27ef12158f3b489e93}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, time, start, timeseries\+\_\+colnames=\mbox{[}$\,$\mbox{]}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\begin{DoxyCompactList}\small\item\em Initiate the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classdataset__3_1_1_time_series_data_set_a65ad82058a6a521fbb5a907d6372301f}{clean}} (self, window\+\_\+size=3)
+\begin{DoxyCompactList}\small\item\em Time series median filter with optional parameters which determine the filter size. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classdataset__3_1_1_time_series_data_set_ac746379091e04af6fff7d484a2584e57}{explore}} (self, colnm)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdataset__3_1_1_time_series_data_set_ad79dfbe91c4dd585276677fd09323d35}{time\+Delta}}
+\begin{DoxyCompactList}\small\item\em the time interval of the data, in second, e.\+g. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classdataset__3_1_1_time_series_data_set_aae63d71758a79ef8497225e53eca1330}{startingtime}}
+\begin{DoxyCompactList}\small\item\em the starting point of the series, int, e.\+g. \end{DoxyCompactList}\item 
+\Hypertarget{classdataset__3_1_1_time_series_data_set_ab4be6d65ec1a28ee6f6fa5bbf4c82066}\label{classdataset__3_1_1_time_series_data_set_ab4be6d65ec1a28ee6f6fa5bbf4c82066} 
+{\bfseries ts\+\_\+colnm}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdataset__3_1_1_data_set}{dataset\+\_\+3.\+Data\+Set}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries na\+Char}
+\begin{DoxyCompactList}\small\item\em user defined missing value indicator of the input data, default is "{}na"{}. \end{DoxyCompactList}\item 
+{\bfseries colnmidx}
+\begin{DoxyCompactList}\small\item\em user defined column name row index, default is "{}0"{} indicating the first row is the column names. \end{DoxyCompactList}\item 
+{\bfseries filename}
+\begin{DoxyCompactList}\small\item\em user entered file name; user entered data type, must be one of the following\+: "{}quantitative"{}, "{}qualitative"{}, "{}timeseries"{}, "{}text"{}. \end{DoxyCompactList}\item 
+{\bfseries datatype}
+\begin{DoxyCompactList}\small\item\em user entered file name; user entered data type, must be one of the following\+: "{}quantitative"{}, "{}qualitative"{}, "{}timeseries"{}, "{}text"{}. \end{DoxyCompactList}\item 
+{\bfseries colnms}
+\begin{DoxyCompactList}\small\item\em colunm names \end{DoxyCompactList}\item 
+{\bfseries df}
+\begin{DoxyCompactList}\small\item\em data as a dictionary with key as column name, value as the list of the data points of the given column name, this is handy when the input data is not a single vector or a mixed type. \end{DoxyCompactList}\item 
+{\bfseries data}
+\begin{DoxyCompactList}\small\item\em the user defined data extracted from input csv as a dictionary \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdataset__3_1_1_data_set}{dataset\+\_\+3.\+Data\+Set}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+Data\+Set\+\_\+\+\_\+clean\+\_\+col} (self, colnm)
+\begin{DoxyCompactList}\small\item\em try convert str to float if possible \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classdataset__3_1_1_data_set}{dataset\+\_\+3.\+Data\+Set}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+delim}
+\begin{DoxyCompactList}\small\item\em user defined deliminator of the input data, default is "{},"{}. \end{DoxyCompactList}\item 
+{\bfseries \+\_\+new\+Line}
+\begin{DoxyCompactList}\small\item\em user defined new line char of the input data, default is "{}\textbackslash{}n"{}. \end{DoxyCompactList}\item 
+{\bfseries \+\_\+new\+Line\+\_\+colnm}
+\begin{DoxyCompactList}\small\item\em user defined new line char of the column name line \end{DoxyCompactList}\item 
+{\bfseries \+\_\+delim\+\_\+colnm}
+\begin{DoxyCompactList}\small\item\em user defind deliminator of the column name line \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Define a time series dataset with methods to manipulate, store or retrieve time-\/series data or related info. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdataset__3_1_1_time_series_data_set_ae72e5968bbd33a27ef12158f3b489e93}\label{classdataset__3_1_1_time_series_data_set_ae72e5968bbd33a27ef12158f3b489e93} 
+\index{dataset\_3.TimeSeriesDataSet@{dataset\_3.TimeSeriesDataSet}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!dataset\_3.TimeSeriesDataSet@{dataset\_3.TimeSeriesDataSet}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily dataset\+\_\+3.\+Time\+Series\+Data\+Set.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{time,  }\item[{}]{start,  }\item[{}]{timeseries\+\_\+colnames = {\ttfamily \mbox{[}\mbox{]}},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Initiate the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & String\+: the time interval of the data in second, e.\+g. 1 \\
+\hline
+{\em start} & String\+: the starting point of the series, int, e.\+g.\+0 \\
+\hline
+{\em timeseries\+\_\+colnames} & String\+: the column names of time series data \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classdataset__3_1_1_data_set_ab76ef7139897f6ca312c1eca991e3183}{dataset\+\_\+3.\+Data\+Set}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdataset__3_1_1_time_series_data_set_a65ad82058a6a521fbb5a907d6372301f}\label{classdataset__3_1_1_time_series_data_set_a65ad82058a6a521fbb5a907d6372301f} 
+\index{dataset\_3.TimeSeriesDataSet@{dataset\_3.TimeSeriesDataSet}!clean@{clean}}
+\index{clean@{clean}!dataset\_3.TimeSeriesDataSet@{dataset\_3.TimeSeriesDataSet}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily dataset\+\_\+3.\+Time\+Series\+Data\+Set.\+clean (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{window\+\_\+size = {\ttfamily 3} }\end{DoxyParamCaption})}
+
+
+
+Time series median filter with optional parameters which determine the filter size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & window\+\_\+size is the filter size to smooth the time series data, default 3 \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classdataset__3_1_1_data_set_a8724abb5e1d01dfb30eb8ec68e5a3290}{dataset\+\_\+3.\+Data\+Set}}.
+
+\Hypertarget{classdataset__3_1_1_time_series_data_set_ac746379091e04af6fff7d484a2584e57}\label{classdataset__3_1_1_time_series_data_set_ac746379091e04af6fff7d484a2584e57} 
+\index{dataset\_3.TimeSeriesDataSet@{dataset\_3.TimeSeriesDataSet}!explore@{explore}}
+\index{explore@{explore}!dataset\_3.TimeSeriesDataSet@{dataset\_3.TimeSeriesDataSet}}
+\doxysubsubsection{\texorpdfstring{explore()}{explore()}}
+{\footnotesize\ttfamily dataset\+\_\+3.\+Time\+Series\+Data\+Set.\+explore (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{colnm }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}explore dataset with line plot and histogram
+
+@param col String: column name to be plotted\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdataset__3_1_1_data_set_a1cdaaedf6bf8fad525aee753d2ebf63e}{dataset\+\_\+3.\+Data\+Set}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdataset__3_1_1_time_series_data_set_aae63d71758a79ef8497225e53eca1330}\label{classdataset__3_1_1_time_series_data_set_aae63d71758a79ef8497225e53eca1330} 
+\index{dataset\_3.TimeSeriesDataSet@{dataset\_3.TimeSeriesDataSet}!startingtime@{startingtime}}
+\index{startingtime@{startingtime}!dataset\_3.TimeSeriesDataSet@{dataset\_3.TimeSeriesDataSet}}
+\doxysubsubsection{\texorpdfstring{startingtime}{startingtime}}
+{\footnotesize\ttfamily dataset\+\_\+3.\+Time\+Series\+Data\+Set.\+startingtime}
+
+
+
+the starting point of the series, int, e.\+g. 
+
+0 \Hypertarget{classdataset__3_1_1_time_series_data_set_ad79dfbe91c4dd585276677fd09323d35}\label{classdataset__3_1_1_time_series_data_set_ad79dfbe91c4dd585276677fd09323d35} 
+\index{dataset\_3.TimeSeriesDataSet@{dataset\_3.TimeSeriesDataSet}!timeDelta@{timeDelta}}
+\index{timeDelta@{timeDelta}!dataset\_3.TimeSeriesDataSet@{dataset\_3.TimeSeriesDataSet}}
+\doxysubsubsection{\texorpdfstring{timeDelta}{timeDelta}}
+{\footnotesize\ttfamily dataset\+\_\+3.\+Time\+Series\+Data\+Set.\+time\+Delta}
+
+
+
+the time interval of the data, in second, e.\+g. 
+
+1 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/dataset\+\_\+3.\+py\end{DoxyCompactItemize}

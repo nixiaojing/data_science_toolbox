@@ -1,0 +1,141 @@
+\doxysection{dataset\+\_\+3.\+Data\+Set Class Reference}
+\hypertarget{classdataset__3_1_1_data_set}{}\label{classdataset__3_1_1_data_set}\index{dataset\_3.DataSet@{dataset\_3.DataSet}}
+
+
+Define a dataset with methods to manipulate, store or retrieve data or related info.  
+
+
+Inheritance diagram for dataset\+\_\+3.\+Data\+Set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.521739cm]{classdataset__3_1_1_data_set}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdataset__3_1_1_data_set_ab76ef7139897f6ca312c1eca991e3183}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\begin{DoxyCompactList}\small\item\em Initiate the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classdataset__3_1_1_data_set_a8724abb5e1d01dfb30eb8ec68e5a3290}{clean}} (self)
+\begin{DoxyCompactList}\small\item\em Convert all missing value to np nan. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classdataset__3_1_1_data_set_a1cdaaedf6bf8fad525aee753d2ebf63e}{explore}} (self)
+\begin{DoxyCompactList}\small\item\em explore each column with a histogram plot, skip if data type is qual or text \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdataset__3_1_1_data_set_a834c5ff369111715c5e29f42d7ddb846}\label{classdataset__3_1_1_data_set_a834c5ff369111715c5e29f42d7ddb846} 
+{\bfseries na\+Char}
+\begin{DoxyCompactList}\small\item\em user defined missing value indicator of the input data, default is "{}na"{}. \end{DoxyCompactList}\item 
+\Hypertarget{classdataset__3_1_1_data_set_a48b958a3d71a47299b2fa3f2202287a7}\label{classdataset__3_1_1_data_set_a48b958a3d71a47299b2fa3f2202287a7} 
+{\bfseries colnmidx}
+\begin{DoxyCompactList}\small\item\em user defined column name row index, default is "{}0"{} indicating the first row is the column names. \end{DoxyCompactList}\item 
+\Hypertarget{classdataset__3_1_1_data_set_ad17207ef8e57f8804f010b9661c16024}\label{classdataset__3_1_1_data_set_ad17207ef8e57f8804f010b9661c16024} 
+{\bfseries filename}
+\begin{DoxyCompactList}\small\item\em user entered file name; user entered data type, must be one of the following\+: "{}quantitative"{}, "{}qualitative"{}, "{}timeseries"{}, "{}text"{}. \end{DoxyCompactList}\item 
+\Hypertarget{classdataset__3_1_1_data_set_ade1e58642794e366a8ff0f71f3199461}\label{classdataset__3_1_1_data_set_ade1e58642794e366a8ff0f71f3199461} 
+{\bfseries datatype}
+\begin{DoxyCompactList}\small\item\em user entered file name; user entered data type, must be one of the following\+: "{}quantitative"{}, "{}qualitative"{}, "{}timeseries"{}, "{}text"{}. \end{DoxyCompactList}\item 
+\Hypertarget{classdataset__3_1_1_data_set_a7732f25b4b99d1e4166bfd4c8dde603f}\label{classdataset__3_1_1_data_set_a7732f25b4b99d1e4166bfd4c8dde603f} 
+{\bfseries colnms}
+\begin{DoxyCompactList}\small\item\em colunm names \end{DoxyCompactList}\item 
+\Hypertarget{classdataset__3_1_1_data_set_ad05a00de910252b90710895b0d04439f}\label{classdataset__3_1_1_data_set_ad05a00de910252b90710895b0d04439f} 
+{\bfseries df}
+\begin{DoxyCompactList}\small\item\em data as a dictionary with key as column name, value as the list of the data points of the given column name, this is handy when the input data is not a single vector or a mixed type. \end{DoxyCompactList}\item 
+\Hypertarget{classdataset__3_1_1_data_set_aacb4357bf3a03d4f4a3193327de379c0}\label{classdataset__3_1_1_data_set_aacb4357bf3a03d4f4a3193327de379c0} 
+{\bfseries data}
+\begin{DoxyCompactList}\small\item\em the user defined data extracted from input csv as a dictionary \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdataset__3_1_1_data_set_a602ec4e2dc069867a69df3b060ffbffd}\label{classdataset__3_1_1_data_set_a602ec4e2dc069867a69df3b060ffbffd} 
+{\bfseries \+\_\+\+Data\+Set\+\_\+\+\_\+clean\+\_\+col} (self, colnm)
+\begin{DoxyCompactList}\small\item\em try convert str to float if possible \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdataset__3_1_1_data_set_a0ddd5e89edfd2406b9a8e1779256308f}\label{classdataset__3_1_1_data_set_a0ddd5e89edfd2406b9a8e1779256308f} 
+{\bfseries \+\_\+delim}
+\begin{DoxyCompactList}\small\item\em user defined deliminator of the input data, default is "{},"{}. \end{DoxyCompactList}\item 
+\Hypertarget{classdataset__3_1_1_data_set_ab80c8daa50a4f83dae21119466ca1e7f}\label{classdataset__3_1_1_data_set_ab80c8daa50a4f83dae21119466ca1e7f} 
+{\bfseries \+\_\+new\+Line}
+\begin{DoxyCompactList}\small\item\em user defined new line char of the input data, default is "{}\textbackslash{}n"{}. \end{DoxyCompactList}\item 
+\Hypertarget{classdataset__3_1_1_data_set_ac800af029308c2a7313498a3f8ac9723}\label{classdataset__3_1_1_data_set_ac800af029308c2a7313498a3f8ac9723} 
+{\bfseries \+\_\+new\+Line\+\_\+colnm}
+\begin{DoxyCompactList}\small\item\em user defined new line char of the column name line \end{DoxyCompactList}\item 
+\Hypertarget{classdataset__3_1_1_data_set_a7d7e51e121ca04d671550e158b018d30}\label{classdataset__3_1_1_data_set_a7d7e51e121ca04d671550e158b018d30} 
+{\bfseries \+\_\+delim\+\_\+colnm}
+\begin{DoxyCompactList}\small\item\em user defind deliminator of the column name line \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Define a dataset with methods to manipulate, store or retrieve data or related info. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdataset__3_1_1_data_set_ab76ef7139897f6ca312c1eca991e3183}\label{classdataset__3_1_1_data_set_ab76ef7139897f6ca312c1eca991e3183} 
+\index{dataset\_3.DataSet@{dataset\_3.DataSet}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!dataset\_3.DataSet@{dataset\_3.DataSet}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily dataset\+\_\+3.\+Data\+Set.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Initiate the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & String\+: the file that contains data \\
+\hline
+{\em delim} & String\+: the deliminator in the input data. Default \textquotesingle{}, \textquotesingle{} \\
+\hline
+{\em new\+Line} & String\+: the newline indicator in the input data. Default \textquotesingle{}~\newline
+\textquotesingle{} \\
+\hline
+{\em na\+Char} & String\+: the missing values in the input data. Default \textquotesingle{}na\textquotesingle{} \\
+\hline
+{\em colnmidx} & int\+: user defined column name row index, default is "{}0"{} indicating the first row is the column names. \\
+\hline
+{\em delim\+\_\+colnm} & String\+: the deliminator in the column name line. Default same as delim \\
+\hline
+{\em new\+Line\+\_\+colnm} & String\+: the newline indicator in the column name line. Default same as new\+Line Enter -\/1 for no column name, key will be replaced by number from 1. If this number \texorpdfstring{$>$}{>}0, then will skip all lines on top of the colname line. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classdataset__3_1_1_qual_data_set_ad82e53e1887c8bac9769a7d9c4352a58}{dataset\+\_\+3.\+Qual\+Data\+Set}}, \mbox{\hyperlink{classdataset__3_1_1_quant_data_set_ade55f1ae4c057431b42577556831d157}{dataset\+\_\+3.\+Quant\+Data\+Set}}, \mbox{\hyperlink{classdataset__3_1_1_text_data_set_aae828b24a40ede9a36230217861555d7}{dataset\+\_\+3.\+Text\+Data\+Set}}, and \mbox{\hyperlink{classdataset__3_1_1_time_series_data_set_ae72e5968bbd33a27ef12158f3b489e93}{dataset\+\_\+3.\+Time\+Series\+Data\+Set}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdataset__3_1_1_data_set_a8724abb5e1d01dfb30eb8ec68e5a3290}\label{classdataset__3_1_1_data_set_a8724abb5e1d01dfb30eb8ec68e5a3290} 
+\index{dataset\_3.DataSet@{dataset\_3.DataSet}!clean@{clean}}
+\index{clean@{clean}!dataset\_3.DataSet@{dataset\_3.DataSet}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily dataset\+\_\+3.\+Data\+Set.\+clean (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Convert all missing value to np nan. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classdataset__3_1_1_text_data_set_a3ce8e58f1ce2f9089da4d0591358ba10}{dataset\+\_\+3.\+Text\+Data\+Set}}, \mbox{\hyperlink{classdataset__3_1_1_quant_data_set_ab93be07c855db2a0a8735bd904df9998}{dataset\+\_\+3.\+Quant\+Data\+Set}}, \mbox{\hyperlink{classdataset__3_1_1_qual_data_set_adea73eacd4b46dc2258f747d81af830d}{dataset\+\_\+3.\+Qual\+Data\+Set}}, and \mbox{\hyperlink{classdataset__3_1_1_time_series_data_set_a65ad82058a6a521fbb5a907d6372301f}{dataset\+\_\+3.\+Time\+Series\+Data\+Set}}.
+
+\Hypertarget{classdataset__3_1_1_data_set_a1cdaaedf6bf8fad525aee753d2ebf63e}\label{classdataset__3_1_1_data_set_a1cdaaedf6bf8fad525aee753d2ebf63e} 
+\index{dataset\_3.DataSet@{dataset\_3.DataSet}!explore@{explore}}
+\index{explore@{explore}!dataset\_3.DataSet@{dataset\_3.DataSet}}
+\doxysubsubsection{\texorpdfstring{explore()}{explore()}}
+{\footnotesize\ttfamily dataset\+\_\+3.\+Data\+Set.\+explore (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+explore each column with a histogram plot, skip if data type is qual or text 
+
+
+
+Reimplemented in \mbox{\hyperlink{classdataset__3_1_1_qual_data_set_a746fdf22be27bd07a50edc62a1acde65}{dataset\+\_\+3.\+Qual\+Data\+Set}}, \mbox{\hyperlink{classdataset__3_1_1_time_series_data_set_ac746379091e04af6fff7d484a2584e57}{dataset\+\_\+3.\+Time\+Series\+Data\+Set}}, \mbox{\hyperlink{classdataset__3_1_1_text_data_set_a9ecf6cb899e5ed8b5800149d58f13127}{dataset\+\_\+3.\+Text\+Data\+Set}}, and \mbox{\hyperlink{classdataset__3_1_1_quant_data_set_ad07260409a472447e4f650a99d96a8bb}{dataset\+\_\+3.\+Quant\+Data\+Set}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/dataset\+\_\+3.\+py\end{DoxyCompactItemize}
