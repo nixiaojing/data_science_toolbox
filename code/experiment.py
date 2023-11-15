@@ -15,6 +15,7 @@
 #*
 import numpy as np
 from classifier_algorithm import (Classifier, simpleKNNClassifier, _heap)
+import matplotlib.pyplot as plt
 
 class Experiment():
     def __init__(self, data, label):
@@ -151,3 +152,178 @@ class Experiment():
             row_index, col_index = nm_index_dict[yhat], nm_index_dict[ytrue]
             mtx[row_index][col_index] += 1
         return (mtx, order)
+
+
+
+class ROCAnalysis:
+    def __init__(self, data_dict):
+        """
+        Initialize the ROCAnalysis object with input data.
+
+        Parameters:
+        - data_dict: Dictionary where keys are experiment values are lists lists of label and scores.
+        dictionary of dictionary
+        data_dict = 
+        {"experiment1":
+            {"label":[class2,class1,class1,class2,class3,class3],
+             "score": ## which n-1 classes, n is the total class number
+                {"class1":[0.2,0.3,0.5,0.6,0.1,0.2],
+                 "class2":[0.6,0.2,0.2,0.1,0.2,0.2]}
+                 }
+        "experiment2":
+            {"label":[class2,class1,class1,class2,class3,class3],
+             "score":
+                {"class1":[0.2,0.3,0.5,0.6,0.1,0.2],
+                 "class2":[0.6,0.2,0.2,0.1,0.2,0.2]}
+                 }
+        }
+        """
+        self.data_dict = data_dict
+        self.experiment = list(data_dict.keys())
+        self.num_classes = len(set(data_dict[self.experiment[0]]["label"]))
+        
+
+    def plot_roc_curve(self):
+        """
+        Plot ROC curves for binary or multiclass classification.
+        """
+        if self.num_classes == 2:
+            # Binary classification
+            self.plot_binary_roc_curve()
+        elif self.num_classes > 2:
+            # Multiclass classification (one-versus-all ROC curves)
+            self.plot_multiclass_roc_curve()
+        else:
+            print("Error: Invalid number of classes.")
+
+    def plot_binary_roc_curve(self):
+        """
+        Plot ROC curves for binary classification.
+        """
+        plt.figure(figsize=(6, 6))
+
+        for i, (experiment, label_score) in enumerate(self.data_dict.items()):
+            true_labels = label_score["label"]
+            scores_dict = label_score["score"]
+            score_class = list(scores_dict.keys())[0]
+            scores = list(scores_dict.values())[0]
+            binary_labels = [1 if str(true_labels[x])== str(score_class) else 0 for x in range(len(true_labels))]
+            fpr, tpr = self.calculate_roc_curve(binary_labels, scores)
+            auc_score = self.calculate_auc(fpr, tpr)
+            color = self.get_color(i)
+            plt.plot(fpr, tpr, color=color, label=str(experiment)+f' Class {score_class} to others, (AUC = {auc_score:.2f})')
+
+        # Plotting the baseline (1:1 line)
+        plt.plot([0, 1], [0, 1], linestyle='--', color='gray', linewidth=2, label='Random')
+        plt.title("ROC curve")
+        plt.xlabel("False Positive Rate (TPR)")
+        plt.ylabel("True Positive Rate (FPR)")
+        plt.legend()
+        plt.show()
+
+    def calculate_roc_curve(self, true_labels, scores):
+        """
+        Calculate ROC curve for binary classification.
+
+        Parameters:
+        - true_labels: True class labels (0 or 1).
+        - scores: Predicted scores/probabilities.
+
+        Returns:
+        - fpr: False Positive Rate.
+        - tpr: True Positive Rate.
+        """
+        total_positive = sum(true_labels) 
+        total_negative = len(true_labels) - total_positive 
+
+        thresholds = list(set(scores)) 
+        thresholds.sort(reverse=True) ## using sort to improve efficiency
+        fpr, tpr = [0], [0]
+
+        for threshold in thresholds:
+            true_positive, false_positive = 0, 0
+            for i in range(len(true_labels)):
+                predicted_label = 1 if scores[i] >= threshold else 0
+
+                if predicted_label == 1 and true_labels[i] == 1:
+                    true_positive += 1
+                elif predicted_label == 1 and true_labels[i] == 0:
+                    false_positive += 1
+            if total_negative and total_positive:
+                fpr.append(false_positive / total_negative)
+                tpr.append(true_positive / total_positive)
+            else: 
+                fpr.append(0)
+                tpr.append(0)
+
+        return np.array(fpr), np.array(tpr)
+
+    def calculate_auc(self, fpr, tpr):
+        """
+        Calculate AUC (Area Under the Curve) from ROC curve points.
+
+        Parameters:
+        - fpr: False Positive Rate.
+        - tpr: True Positive Rate.
+
+        Returns:
+        - AUC score.
+        """
+        auc_score = 0.0
+        for i in range(1, len(fpr)):
+            auc_score += (fpr[i] - fpr[i - 1]) * (tpr[i] + tpr[i - 1]) / 2.0
+        return auc_score
+
+    def get_color(self, index):
+        """
+        Get a color for plotting based on the index.
+
+        Parameters:
+        - index: Index of the class.
+
+        Returns:
+        - Color string.
+        """
+        colors = ['aqua', 'darkorange', 'cornflowerblue', 'green', 'red']
+        return colors[index % len(colors)]
+
+    def get_linetype(self, index):
+        """
+        Get a linetype for plotting based on the index.
+
+        Parameters:
+        - index: Index of the experiment.
+
+        Returns:
+        - linetype string.
+        """
+        linetypes = ['solid', 'dotted', 'dashed', 'dashdot']
+        return linetypes[index % len(linetypes)]
+        
+
+
+
+    def plot_multiclass_roc_curve(self):
+        """
+        Plot one-versus-all ROC curves for multiclass classification.
+        """
+        plt.figure(figsize=(7, 7))
+
+        for i, (experiment, label_score) in enumerate(self.data_dict.items()):
+            true_labels = label_score["label"]
+            scores_dict = label_score["score"]
+            color = self.get_color(i)
+            for j , (classes, scores) in enumerate(scores_dict.items()):
+                binary_labels = [1 if str(true_labels[k]) == classes else 0 for k in range(len(true_labels))]
+
+                fpr, tpr = self.calculate_roc_curve(binary_labels, scores)
+                auc_score = self.calculate_auc(fpr, tpr)
+                linetype = self.get_linetype(j)
+                plt.plot(fpr, tpr, color=color, linestyle=linetype,label=str(experiment)+f' Class {classes} to others, (AUC = {auc_score:.2f})')
+
+        plt.plot([0, 1], [0, 1], linestyle='--', color='gray', linewidth=2, label='Random')
+        plt.xlabel('False Positive Rate')
+        plt.ylabel('True Positive Rate')
+        plt.title('Receiver Operating Characteristic (ROC) Curve (Multiclass)')
+        plt.legend(bbox_to_anchor=(0.95, -0.1),ncol=len(self.experiment),fontsize=6 )
+        plt.show()
