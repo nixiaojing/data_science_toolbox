@@ -84,10 +84,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a82aac989e5ec2aebf8271524445a5938" id="r_a82aac989e5ec2aebf8271524445a5938"><td class="memItemLeft" align="right" valign="top"><a id="a82aac989e5ec2aebf8271524445a5938" name="a82aac989e5ec2aebf8271524445a5938"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, data, label)</td></tr>
-<tr class="memdesc:a82aac989e5ec2aebf8271524445a5938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the class. <br /></td></tr>
-<tr class="separator:a82aac989e5ec2aebf8271524445a5938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad588a0778344c39be4643759320889" id="r_a2ad588a0778344c39be4643759320889"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexperiment_1_1_experiment.html#a2ad588a0778344c39be4643759320889">__init__</a> (self, **kwargs)</td></tr>
+<tr class="memdesc:a2ad588a0778344c39be4643759320889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the class.  <br /></td></tr>
+<tr class="separator:a2ad588a0778344c39be4643759320889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5ddf930cbbc3f7b7e4ea68d5149f158" id="r_af5ddf930cbbc3f7b7e4ea68d5149f158"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexperiment_1_1_experiment.html#af5ddf930cbbc3f7b7e4ea68d5149f158">crossValidation</a> (self, k_fold, KNN_k)</td></tr>
 <tr class="separator:af5ddf930cbbc3f7b7e4ea68d5149f158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8911448458264902a247d4fdc776bf10" id="r_a8911448458264902a247d4fdc776bf10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexperiment_1_1_experiment.html#a8911448458264902a247d4fdc776bf10">score</a> (self, pred_y, real_y)</td></tr>
@@ -95,6 +94,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab89b89d381342e703af9219b6468a9f6" id="r_ab89b89d381342e703af9219b6468a9f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexperiment_1_1_experiment.html#ab89b89d381342e703af9219b6468a9f6">confusionMatrix</a> (self, pred_y, real_y, order=None)</td></tr>
 <tr class="memdesc:ab89b89d381342e703af9219b6468a9f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return confusion matrix and row, column names.  <br /></td></tr>
 <tr class="separator:ab89b89d381342e703af9219b6468a9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a620c6ed689867501b1fd3327222617c1" id="r_a620c6ed689867501b1fd3327222617c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexperiment_1_1_experiment.html#a620c6ed689867501b1fd3327222617c1">calculate_roc_curve</a> (self, true_labels, scores)</td></tr>
+<tr class="memdesc:a620c6ed689867501b1fd3327222617c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate ROC curve for binary classification.  <br /></td></tr>
+<tr class="separator:a620c6ed689867501b1fd3327222617c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11f9ff4bbc55334c7be2ee5e1061feac" id="r_a11f9ff4bbc55334c7be2ee5e1061feac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexperiment_1_1_experiment.html#a11f9ff4bbc55334c7be2ee5e1061feac">calculate_auc</a> (self, fpr, tpr)</td></tr>
+<tr class="memdesc:a11f9ff4bbc55334c7be2ee5e1061feac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate AUC (Area Under the Curve) from ROC curve points.  <br /></td></tr>
+<tr class="separator:a11f9ff4bbc55334c7be2ee5e1061feac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfce4dc3b43f5a266fbd9363b8eb4b1c" id="r_adfce4dc3b43f5a266fbd9363b8eb4b1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexperiment_1_1_experiment.html#adfce4dc3b43f5a266fbd9363b8eb4b1c">get_color</a> (self, index)</td></tr>
+<tr class="memdesc:adfce4dc3b43f5a266fbd9363b8eb4b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a color for plotting based on the index.  <br /></td></tr>
+<tr class="separator:adfce4dc3b43f5a266fbd9363b8eb4b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8281be7086946a5d6a516e4df56695ab" id="r_a8281be7086946a5d6a516e4df56695ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexperiment_1_1_experiment.html#a8281be7086946a5d6a516e4df56695ab">get_linetype</a> (self, index)</td></tr>
+<tr class="memdesc:a8281be7086946a5d6a516e4df56695ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a linetype for plotting based on the index.  <br /></td></tr>
+<tr class="separator:a8281be7086946a5d6a516e4df56695ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcdf179f895ed9fb6c98a950494704a0" id="r_adcdf179f895ed9fb6c98a950494704a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexperiment_1_1_experiment.html#adcdf179f895ed9fb6c98a950494704a0">plot_roc_curve</a> (self)</td></tr>
+<tr class="memdesc:adcdf179f895ed9fb6c98a950494704a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plot ROC curves binary or multiclass classification for multiple experiments.  <br /></td></tr>
+<tr class="separator:adcdf179f895ed9fb6c98a950494704a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -110,6 +124,14 @@ Public Attributes</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>n</b></td></tr>
 <tr class="memdesc:ad91be6f3fb1f5ddb6f5b9a3f93ff8709"><td class="mdescLeft">&#160;</td><td class="mdescRight">the number of data points <br /></td></tr>
 <tr class="separator:ad91be6f3fb1f5ddb6f5b9a3f93ff8709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2469d107b8d37e2e77e13444a7b59c1d" id="r_a2469d107b8d37e2e77e13444a7b59c1d"><td class="memItemLeft" align="right" valign="top"><a id="a2469d107b8d37e2e77e13444a7b59c1d" name="a2469d107b8d37e2e77e13444a7b59c1d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>prob_dict</b></td></tr>
+<tr class="memdesc:a2469d107b8d37e2e77e13444a7b59c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dictionary where keys are experiment values are lists lists of label and scores. <br /></td></tr>
+<tr class="separator:a2469d107b8d37e2e77e13444a7b59c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab95862bd9840d70b6be89813e30045a3" id="r_ab95862bd9840d70b6be89813e30045a3"><td class="memItemLeft" align="right" valign="top"><a id="ab95862bd9840d70b6be89813e30045a3" name="ab95862bd9840d70b6be89813e30045a3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>experiment</b></td></tr>
+<tr class="memdesc:ab95862bd9840d70b6be89813e30045a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">the experiment name <br /></td></tr>
+<tr class="separator:ab95862bd9840d70b6be89813e30045a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -118,7 +140,152 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a8a1ebf53c2b03276f5b0ee9b35e3960f"><td class="mdescLeft">&#160;</td><td class="mdescRight">split data and label in training and testing <br /></td></tr>
 <tr class="separator:a8a1ebf53c2b03276f5b0ee9b35e3960f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2ad588a0778344c39be4643759320889" name="a2ad588a0778344c39be4643759320889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad588a0778344c39be4643759320889">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">experiment.Experiment.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">**&#160;</td>
+          <td class="paramname"><em>kwargs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>list: the data without label </td></tr>
+    <tr><td class="paramname">label</td><td>list: the true label </td></tr>
+    <tr><td class="paramname">prob_dict</td><td>dict: Dictionary where keys are experiment values are lists lists of label and scores.</td></tr>
+  </table>
+  </dd>
+</dl>
+<pre class="fragment">Format of prob_dict
+{"experiment1":
+    {"label":[class2,class1,class1,class2,class3,class3], 
+    "score": ## which n classes, n is the total class number 
+        {"class1":[0.2,0.3,0.5,0.6,0.1,0.2], 
+        "class2":[0.6,0.2,0.2,0.1,0.2,0.2], 
+        "class3":[0.2,0.5,0.3,0.3,0.7,0.6]} 
+        } 
+"experiment2": 
+    {"label":[class2,class1,class1,class2,class3,class3], 
+    "score": 
+        {"class1":[0.2,0.3,0.5,0.6,0.1,0.2], 
+        "class2":[0.6,0.2,0.2,0.1,0.2,0.2], 
+        "class3":[0.2,0.5,0.3,0.3,0.7,0.6]} 
+        } 
+}
+</pre> 
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a11f9ff4bbc55334c7be2ee5e1061feac" name="a11f9ff4bbc55334c7be2ee5e1061feac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11f9ff4bbc55334c7be2ee5e1061feac">&#9670;&#160;</a></span>calculate_auc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">experiment.Experiment.calculate_auc </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>fpr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>tpr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate AUC (Area Under the Curve) from ROC curve points. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fpr</td><td>list: False Positive Rate. </td></tr>
+    <tr><td class="paramname">tpr</td><td>list: True Positive Rate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AUC score. </dd></dl>
+
+</div>
+</div>
+<a id="a620c6ed689867501b1fd3327222617c1" name="a620c6ed689867501b1fd3327222617c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a620c6ed689867501b1fd3327222617c1">&#9670;&#160;</a></span>calculate_roc_curve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">experiment.Experiment.calculate_roc_curve </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>true_labels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>scores</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate ROC curve for binary classification. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">true_labels</td><td>list: True class labels (0 or 1). </td></tr>
+    <tr><td class="paramname">scores</td><td>list: Predicted scores/probabilities.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>fpr list: False Positive Rate. </dd>
+<dd>
+tpr list: True Positive Rate. </dd></dl>
+
+</div>
+</div>
 <a id="ab89b89d381342e703af9219b6468a9f6" name="ab89b89d381342e703af9219b6468a9f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab89b89d381342e703af9219b6468a9f6">&#9670;&#160;</a></span>confusionMatrix()</h2>
 
@@ -242,6 +409,102 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>average score </dd></dl>
+
+</div>
+</div>
+<a id="adfce4dc3b43f5a266fbd9363b8eb4b1c" name="adfce4dc3b43f5a266fbd9363b8eb4b1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfce4dc3b43f5a266fbd9363b8eb4b1c">&#9670;&#160;</a></span>get_color()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">experiment.Experiment.get_color </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a color for plotting based on the index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>int: Index of the class.</td></tr>
+    <tr><td class="paramname">Color</td><td>string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8281be7086946a5d6a516e4df56695ab" name="a8281be7086946a5d6a516e4df56695ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8281be7086946a5d6a516e4df56695ab">&#9670;&#160;</a></span>get_linetype()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">experiment.Experiment.get_linetype </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a linetype for plotting based on the index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>int: Index of the experiment.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>linetype string. </dd></dl>
+
+</div>
+</div>
+<a id="adcdf179f895ed9fb6c98a950494704a0" name="adcdf179f895ed9fb6c98a950494704a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcdf179f895ed9fb6c98a950494704a0">&#9670;&#160;</a></span>plot_roc_curve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">experiment.Experiment.plot_roc_curve </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Plot ROC curves binary or multiclass classification for multiple experiments. </p>
+<p>For two class problems, the ROC method will produce a ROC plot which contains a ROC curve for each algorithm.</p>
+<p>For multiclass classification, the ROC method will compute multiple (one versus all) curves. </p>
 
 </div>
 </div>

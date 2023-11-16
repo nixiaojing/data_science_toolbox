@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['qualdataset_0',['QualDataSet',['../classdataset_1_1_qual_data_set.html',1,'dataset']]],
-  ['quant_5fcolnms_1',['quant_colnms',['../classdataset_1_1_quant_data_set.html#a0528135805d9ec458ebbee32f665d6f5',1,'dataset::QuantDataSet']]],
-  ['quantdataset_2',['QuantDataSet',['../classdataset_1_1_quant_data_set.html',1,'dataset']]]
+  ['ordered_0',['ordered',['../classdataset_1_1_qual_data_set.html#ad63b91addf2ede02ceb8fa1382f5a5eb',1,'dataset::QualDataSet']]]
 ];

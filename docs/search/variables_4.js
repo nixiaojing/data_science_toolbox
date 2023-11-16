@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['k_0',['k',['../classclassifier__algorithm_1_1_classifier.html#adc8099dd4ad61550409ddb8a78d9e10f',1,'classifier_algorithm::Classifier']]]
+  ['filename_0',['filename',['../classdataset_1_1_data_set.html#a8cf02006bd951615c7885419f5d58d62',1,'dataset::DataSet']]]
 ];

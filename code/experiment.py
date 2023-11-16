@@ -3,7 +3,7 @@
 #* ANLY 555 Fall 2023
 #* Project <Data Science Python Toolbox>
 #*
-#* Due on: Oct. 25, 2023
+#* Due on: Nov. 17, 2023
 #* Author(s): Xiaojing Ni
 #*
 #*
@@ -17,19 +17,59 @@ import numpy as np
 from classifier_algorithm import (Classifier, simpleKNNClassifier, _heap)
 import matplotlib.pyplot as plt
 
+
+
 class Experiment():
-    def __init__(self, data, label):
+    def __init__(self, **kwargs):
         '''!
         Initialize the class
+        
+        @param data list: the data without label
+        @param label list: the true label
+        @param prob_dict dict: Dictionary where keys are experiment values are lists lists of label and scores.
+       
         '''
+        """
+        Format of prob_dict
+        {"experiment1":
+            {"label":[class2,class1,class1,class2,class3,class3], 
+            "score": ## which n classes, n is the total class number 
+                {"class1":[0.2,0.3,0.5,0.6,0.1,0.2], 
+                "class2":[0.6,0.2,0.2,0.1,0.2,0.2], 
+                "class3":[0.2,0.5,0.3,0.3,0.7,0.6]} 
+                } 
+        "experiment2": 
+            {"label":[class2,class1,class1,class2,class3,class3], 
+            "score": 
+                {"class1":[0.2,0.3,0.5,0.6,0.1,0.2], 
+                "class2":[0.6,0.2,0.2,0.1,0.2,0.2], 
+                "class3":[0.2,0.5,0.3,0.3,0.7,0.6]} 
+                } 
+        }
+        """
+
+       
         ## the data without label
-        self.X = data
+        self.X = kwargs.get('data', [])
 
         ## the true label
-        self.y = label
+        self.y = kwargs.get('label', [])
 
         ## the number of data points
-        self.n = len(label)
+        self.n = len(self.y)
+
+        ## Dictionary where keys are experiment values are lists lists of label and scores.
+        self.prob_dict = kwargs.get('prob_dict', {})
+
+        ## the experiment name
+        self.experiment = list(self.prob_dict.keys())
+
+        for item, (experiment, label_score) in enumerate(self.prob_dict.items()):
+            scores_dict = label_score["score"]
+            check = np.sum(np.array(list(scores_dict.values())), 0)
+            if np.all(check == [1]*len(list(scores_dict.values())[0])): pass
+            else: raise Exception("Value Error: the sum of probabilities of all classes not equals to 1.")
+    
     
     def crossValidation(self, k_fold, KNN_k):
         '''!
@@ -154,85 +194,19 @@ class Experiment():
         return (mtx, order)
 
 
-
-class ROCAnalysis:
-    def __init__(self, data_dict):
-        """
-        Initialize the ROCAnalysis object with input data.
-
-        Parameters:
-        - data_dict: Dictionary where keys are experiment values are lists lists of label and scores.
-        dictionary of dictionary
-        data_dict = 
-        {"experiment1":
-            {"label":[class2,class1,class1,class2,class3,class3],
-             "score": ## which n-1 classes, n is the total class number
-                {"class1":[0.2,0.3,0.5,0.6,0.1,0.2],
-                 "class2":[0.6,0.2,0.2,0.1,0.2,0.2]}
-                 }
-        "experiment2":
-            {"label":[class2,class1,class1,class2,class3,class3],
-             "score":
-                {"class1":[0.2,0.3,0.5,0.6,0.1,0.2],
-                 "class2":[0.6,0.2,0.2,0.1,0.2,0.2]}
-                 }
-        }
-        """
-        self.data_dict = data_dict
-        self.experiment = list(data_dict.keys())
-        self.num_classes = len(set(data_dict[self.experiment[0]]["label"]))
+    """ROC analysis associated methods"""
         
 
-    def plot_roc_curve(self):
-        """
-        Plot ROC curves for binary or multiclass classification.
-        """
-        if self.num_classes == 2:
-            # Binary classification
-            self.plot_binary_roc_curve()
-        elif self.num_classes > 2:
-            # Multiclass classification (one-versus-all ROC curves)
-            self.plot_multiclass_roc_curve()
-        else:
-            print("Error: Invalid number of classes.")
-
-    def plot_binary_roc_curve(self):
-        """
-        Plot ROC curves for binary classification.
-        """
-        plt.figure(figsize=(6, 6))
-
-        for i, (experiment, label_score) in enumerate(self.data_dict.items()):
-            true_labels = label_score["label"]
-            scores_dict = label_score["score"]
-            score_class = list(scores_dict.keys())[0]
-            scores = list(scores_dict.values())[0]
-            binary_labels = [1 if str(true_labels[x])== str(score_class) else 0 for x in range(len(true_labels))]
-            fpr, tpr = self.calculate_roc_curve(binary_labels, scores)
-            auc_score = self.calculate_auc(fpr, tpr)
-            color = self.get_color(i)
-            plt.plot(fpr, tpr, color=color, label=str(experiment)+f' Class {score_class} to others, (AUC = {auc_score:.2f})')
-
-        # Plotting the baseline (1:1 line)
-        plt.plot([0, 1], [0, 1], linestyle='--', color='gray', linewidth=2, label='Random')
-        plt.title("ROC curve")
-        plt.xlabel("False Positive Rate (TPR)")
-        plt.ylabel("True Positive Rate (FPR)")
-        plt.legend()
-        plt.show()
-
     def calculate_roc_curve(self, true_labels, scores):
-        """
+        '''!
         Calculate ROC curve for binary classification.
 
-        Parameters:
-        - true_labels: True class labels (0 or 1).
-        - scores: Predicted scores/probabilities.
+        @param true_labels list: True class labels (0 or 1).
+        @param scores list: Predicted scores/probabilities.
 
-        Returns:
-        - fpr: False Positive Rate.
-        - tpr: True Positive Rate.
-        """
+        @return fpr list: False Positive Rate.
+        @return tpr list: True Positive Rate.
+        '''
         total_positive = sum(true_labels) 
         total_negative = len(true_labels) - total_positive 
 
@@ -259,71 +233,85 @@ class ROCAnalysis:
         return np.array(fpr), np.array(tpr)
 
     def calculate_auc(self, fpr, tpr):
-        """
+        '''!
         Calculate AUC (Area Under the Curve) from ROC curve points.
 
-        Parameters:
-        - fpr: False Positive Rate.
-        - tpr: True Positive Rate.
+        @param fpr list: False Positive Rate.
+        @param tpr list: True Positive Rate.
 
-        Returns:
-        - AUC score.
-        """
+        @return AUC score.
+        '''
         auc_score = 0.0
         for i in range(1, len(fpr)):
             auc_score += (fpr[i] - fpr[i - 1]) * (tpr[i] + tpr[i - 1]) / 2.0
         return auc_score
 
     def get_color(self, index):
-        """
+        '''!
         Get a color for plotting based on the index.
 
-        Parameters:
-        - index: Index of the class.
+        @param index int: Index of the class.
 
-        Returns:
-        - Color string.
-        """
+        @param Color string.
+        '''
         colors = ['aqua', 'darkorange', 'cornflowerblue', 'green', 'red']
         return colors[index % len(colors)]
 
     def get_linetype(self, index):
-        """
+        '''!
         Get a linetype for plotting based on the index.
 
-        Parameters:
-        - index: Index of the experiment.
+        @param index int: Index of the experiment.
 
-        Returns:
-        - linetype string.
-        """
+        @return linetype string.
+        '''
         linetypes = ['solid', 'dotted', 'dashed', 'dashdot']
         return linetypes[index % len(linetypes)]
         
 
+    def plot_roc_curve(self):
+        '''!
+        Plot ROC curves binary or multiclass classification for multiple experiments. 
+        
+        For two class problems, the ROC method will produce a ROC plot which contains a ROC curve for each algorithm. 
+        
+        For multiclass classification, the ROC method will compute multiple (one versus all) curves.
+        '''
 
-
-    def plot_multiclass_roc_curve(self):
-        """
-        Plot one-versus-all ROC curves for multiclass classification.
-        """
         plt.figure(figsize=(7, 7))
 
-        for i, (experiment, label_score) in enumerate(self.data_dict.items()):
+        for i, (experiment, label_score) in enumerate(self.prob_dict.items()):
             true_labels = label_score["label"]
+
+            num_class = len(set(true_labels))
             scores_dict = label_score["score"]
             color = self.get_color(i)
-            for j , (classes, scores) in enumerate(scores_dict.items()):
-                binary_labels = [1 if str(true_labels[k]) == classes else 0 for k in range(len(true_labels))]
 
+            if num_class > 2:
+                for j , (classes, scores) in enumerate(scores_dict.items()):
+                    binary_labels = [1 if str(true_labels[k]) == classes else 0 for k in range(len(true_labels))]
+                    fpr, tpr = self.calculate_roc_curve(binary_labels, scores)
+                    auc_score = self.calculate_auc(fpr, tpr)        
+                    linetype = self.get_linetype(j)
+                    plt.plot(fpr, tpr, color=color, linestyle =linetype, label=str(experiment)+f' Class {classes} to others, (AUC = {auc_score:.2f})')
+            
+            elif num_class == 2:
+                score_class = list(scores_dict.keys())[0]
+                scores = list(scores_dict.values())[0]
+                binary_labels = [1 if str(true_labels[x])== str(score_class) else 0 for x in range(len(true_labels))]
                 fpr, tpr = self.calculate_roc_curve(binary_labels, scores)
                 auc_score = self.calculate_auc(fpr, tpr)
-                linetype = self.get_linetype(j)
-                plt.plot(fpr, tpr, color=color, linestyle=linetype,label=str(experiment)+f' Class {classes} to others, (AUC = {auc_score:.2f})')
+
+                plt.plot(fpr, tpr, color=color, label=str(experiment)+f' Class {score_class} to others, (AUC = {auc_score:.2f})')
+
+                
+            else:
+                print("Error: Invalid number of classes.")
+                    
 
         plt.plot([0, 1], [0, 1], linestyle='--', color='gray', linewidth=2, label='Random')
         plt.xlabel('False Positive Rate')
         plt.ylabel('True Positive Rate')
-        plt.title('Receiver Operating Characteristic (ROC) Curve (Multiclass)')
+        plt.title('Receiver Operating Characteristic (ROC) Curve')
         plt.legend(bbox_to_anchor=(0.95, -0.1),ncol=len(self.experiment),fontsize=6 )
         plt.show()

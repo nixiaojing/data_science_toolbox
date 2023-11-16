@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['score_0',['score',['../classexperiment_1_1_experiment.html#a8911448458264902a247d4fdc776bf10',1,'experiment::Experiment']]]
+  ['ordered_0',['ordered',['../classdataset_1_1_qual_data_set.html#ad63b91addf2ede02ceb8fa1382f5a5eb',1,'dataset::QualDataSet']]]
 ];
