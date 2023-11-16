@@ -3,15 +3,24 @@
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classexperiment_1_1_experiment_a82aac989e5ec2aebf8271524445a5938}\label{classexperiment_1_1_experiment_a82aac989e5ec2aebf8271524445a5938} 
-{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, data, label)
+\mbox{\hyperlink{classexperiment_1_1_experiment_a2ad588a0778344c39be4643759320889}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
 \begin{DoxyCompactList}\small\item\em Initialize the class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classexperiment_1_1_experiment_af5ddf930cbbc3f7b7e4ea68d5149f158}{cross\+Validation}} (self, k\+\_\+fold, KNN\+\_\+k)
 \item 
 \mbox{\hyperlink{classexperiment_1_1_experiment_a8911448458264902a247d4fdc776bf10}{score}} (self, pred\+\_\+y, real\+\_\+y)
 \item 
 \mbox{\hyperlink{classexperiment_1_1_experiment_ab89b89d381342e703af9219b6468a9f6}{confusion\+Matrix}} (self, pred\+\_\+y, real\+\_\+y, order=None)
-\begin{DoxyCompactList}\small\item\em Return confusion matrix and row, column names. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Return confusion matrix and row, column names. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classexperiment_1_1_experiment_a620c6ed689867501b1fd3327222617c1}{calculate\+\_\+roc\+\_\+curve}} (self, true\+\_\+labels, scores)
+\begin{DoxyCompactList}\small\item\em Calculate ROC curve for binary classification. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classexperiment_1_1_experiment_a11f9ff4bbc55334c7be2ee5e1061feac}{calculate\+\_\+auc}} (self, fpr, tpr)
+\begin{DoxyCompactList}\small\item\em Calculate AUC (Area Under the Curve) from ROC curve points. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classexperiment_1_1_experiment_adfce4dc3b43f5a266fbd9363b8eb4b1c}{get\+\_\+color}} (self, index)
+\begin{DoxyCompactList}\small\item\em Get a color for plotting based on the index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classexperiment_1_1_experiment_a8281be7086946a5d6a516e4df56695ab}{get\+\_\+linetype}} (self, index)
+\begin{DoxyCompactList}\small\item\em Get a linetype for plotting based on the index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classexperiment_1_1_experiment_adcdf179f895ed9fb6c98a950494704a0}{plot\+\_\+roc\+\_\+curve}} (self)
+\begin{DoxyCompactList}\small\item\em Plot ROC curves binary or multiclass classification for multiple experiments. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -23,7 +32,13 @@
 \begin{DoxyCompactList}\small\item\em the true label \end{DoxyCompactList}\item 
 \Hypertarget{classexperiment_1_1_experiment_ad91be6f3fb1f5ddb6f5b9a3f93ff8709}\label{classexperiment_1_1_experiment_ad91be6f3fb1f5ddb6f5b9a3f93ff8709} 
 {\bfseries n}
-\begin{DoxyCompactList}\small\item\em the number of data points \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em the number of data points \end{DoxyCompactList}\item 
+\Hypertarget{classexperiment_1_1_experiment_a2469d107b8d37e2e77e13444a7b59c1d}\label{classexperiment_1_1_experiment_a2469d107b8d37e2e77e13444a7b59c1d} 
+{\bfseries prob\+\_\+dict}
+\begin{DoxyCompactList}\small\item\em Dictionary where keys are experiment values are lists lists of label and scores. \end{DoxyCompactList}\item 
+\Hypertarget{classexperiment_1_1_experiment_ab95862bd9840d70b6be89813e30045a3}\label{classexperiment_1_1_experiment_ab95862bd9840d70b6be89813e30045a3} 
+{\bfseries experiment}
+\begin{DoxyCompactList}\small\item\em the experiment name \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,7 +47,88 @@
 \begin{DoxyCompactList}\small\item\em split data and label in training and testing \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classexperiment_1_1_experiment_a2ad588a0778344c39be4643759320889}\label{classexperiment_1_1_experiment_a2ad588a0778344c39be4643759320889} 
+\index{experiment.Experiment@{experiment.Experiment}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!experiment.Experiment@{experiment.Experiment}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily experiment.\+Experiment.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Initialize the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & list\+: the data without label \\
+\hline
+{\em label} & list\+: the true label \\
+\hline
+{\em prob\+\_\+dict} & dict\+: Dictionary where keys are experiment values are lists lists of label and scores.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyVerb}Format of prob_dict
+{"experiment1":
+    {"label":[class2,class1,class1,class2,class3,class3], 
+    "score": ## which n classes, n is the total class number 
+        {"class1":[0.2,0.3,0.5,0.6,0.1,0.2], 
+        "class2":[0.6,0.2,0.2,0.1,0.2,0.2], 
+        "class3":[0.2,0.5,0.3,0.3,0.7,0.6]} 
+        } 
+"experiment2": 
+    {"label":[class2,class1,class1,class2,class3,class3], 
+    "score": 
+        {"class1":[0.2,0.3,0.5,0.6,0.1,0.2], 
+        "class2":[0.6,0.2,0.2,0.1,0.2,0.2], 
+        "class3":[0.2,0.5,0.3,0.3,0.7,0.6]} 
+        } 
+}
+\end{DoxyVerb}
+ 
+
 \doxysubsection{Member Function Documentation}
+\Hypertarget{classexperiment_1_1_experiment_a11f9ff4bbc55334c7be2ee5e1061feac}\label{classexperiment_1_1_experiment_a11f9ff4bbc55334c7be2ee5e1061feac} 
+\index{experiment.Experiment@{experiment.Experiment}!calculate\_auc@{calculate\_auc}}
+\index{calculate\_auc@{calculate\_auc}!experiment.Experiment@{experiment.Experiment}}
+\doxysubsubsection{\texorpdfstring{calculate\_auc()}{calculate\_auc()}}
+{\footnotesize\ttfamily experiment.\+Experiment.\+calculate\+\_\+auc (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fpr,  }\item[{}]{tpr }\end{DoxyParamCaption})}
+
+
+
+Calculate AUC (Area Under the Curve) from ROC curve points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fpr} & list\+: False Positive Rate. \\
+\hline
+{\em tpr} & list\+: True Positive Rate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+AUC score. 
+\end{DoxyReturn}
+\Hypertarget{classexperiment_1_1_experiment_a620c6ed689867501b1fd3327222617c1}\label{classexperiment_1_1_experiment_a620c6ed689867501b1fd3327222617c1} 
+\index{experiment.Experiment@{experiment.Experiment}!calculate\_roc\_curve@{calculate\_roc\_curve}}
+\index{calculate\_roc\_curve@{calculate\_roc\_curve}!experiment.Experiment@{experiment.Experiment}}
+\doxysubsubsection{\texorpdfstring{calculate\_roc\_curve()}{calculate\_roc\_curve()}}
+{\footnotesize\ttfamily experiment.\+Experiment.\+calculate\+\_\+roc\+\_\+curve (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{true\+\_\+labels,  }\item[{}]{scores }\end{DoxyParamCaption})}
+
+
+
+Calculate ROC curve for binary classification. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em true\+\_\+labels} & list\+: True class labels (0 or 1). \\
+\hline
+{\em scores} & list\+: Predicted scores/probabilities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fpr list\+: False Positive Rate. 
+
+tpr list\+: True Positive Rate. 
+\end{DoxyReturn}
 \Hypertarget{classexperiment_1_1_experiment_ab89b89d381342e703af9219b6468a9f6}\label{classexperiment_1_1_experiment_ab89b89d381342e703af9219b6468a9f6} 
 \index{experiment.Experiment@{experiment.Experiment}!confusionMatrix@{confusionMatrix}}
 \index{confusionMatrix@{confusionMatrix}!experiment.Experiment@{experiment.Experiment}}
@@ -119,7 +215,54 @@ The space complexity depends on the data size and the variables used in each met
 \begin{DoxyReturn}{Returns}
 average score 
 \end{DoxyReturn}
-\Hypertarget{classexperiment_1_1_experiment_a8911448458264902a247d4fdc776bf10}\label{classexperiment_1_1_experiment_a8911448458264902a247d4fdc776bf10} 
+\Hypertarget{classexperiment_1_1_experiment_adfce4dc3b43f5a266fbd9363b8eb4b1c}\label{classexperiment_1_1_experiment_adfce4dc3b43f5a266fbd9363b8eb4b1c} 
+\index{experiment.Experiment@{experiment.Experiment}!get\_color@{get\_color}}
+\index{get\_color@{get\_color}!experiment.Experiment@{experiment.Experiment}}
+\doxysubsubsection{\texorpdfstring{get\_color()}{get\_color()}}
+{\footnotesize\ttfamily experiment.\+Experiment.\+get\+\_\+color (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{index }\end{DoxyParamCaption})}
+
+
+
+Get a color for plotting based on the index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & int\+: Index of the class.\\
+\hline
+{\em Color} & string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classexperiment_1_1_experiment_a8281be7086946a5d6a516e4df56695ab}\label{classexperiment_1_1_experiment_a8281be7086946a5d6a516e4df56695ab} 
+\index{experiment.Experiment@{experiment.Experiment}!get\_linetype@{get\_linetype}}
+\index{get\_linetype@{get\_linetype}!experiment.Experiment@{experiment.Experiment}}
+\doxysubsubsection{\texorpdfstring{get\_linetype()}{get\_linetype()}}
+{\footnotesize\ttfamily experiment.\+Experiment.\+get\+\_\+linetype (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{index }\end{DoxyParamCaption})}
+
+
+
+Get a linetype for plotting based on the index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & int\+: Index of the experiment.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+linetype string. 
+\end{DoxyReturn}
+\Hypertarget{classexperiment_1_1_experiment_adcdf179f895ed9fb6c98a950494704a0}\label{classexperiment_1_1_experiment_adcdf179f895ed9fb6c98a950494704a0} 
+\index{experiment.Experiment@{experiment.Experiment}!plot\_roc\_curve@{plot\_roc\_curve}}
+\index{plot\_roc\_curve@{plot\_roc\_curve}!experiment.Experiment@{experiment.Experiment}}
+\doxysubsubsection{\texorpdfstring{plot\_roc\_curve()}{plot\_roc\_curve()}}
+{\footnotesize\ttfamily experiment.\+Experiment.\+plot\+\_\+roc\+\_\+curve (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Plot ROC curves binary or multiclass classification for multiple experiments. 
+
+For two class problems, the ROC method will produce a ROC plot which contains a ROC curve for each algorithm.
+
+For multiclass classification, the ROC method will compute multiple (one versus all) curves. \Hypertarget{classexperiment_1_1_experiment_a8911448458264902a247d4fdc776bf10}\label{classexperiment_1_1_experiment_a8911448458264902a247d4fdc776bf10} 
 \index{experiment.Experiment@{experiment.Experiment}!score@{score}}
 \index{score@{score}!experiment.Experiment@{experiment.Experiment}}
 \doxysubsubsection{\texorpdfstring{score()}{score()}}

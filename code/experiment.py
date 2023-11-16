@@ -206,6 +206,10 @@ class Experiment():
 
         @return fpr list: False Positive Rate.
         @return tpr list: True Positive Rate.
+
+        **Computational Complexity:**
+        - Time Complexity \(T(n)\): \(O(n^2log n)\)
+        - Space Complexity \(S(n)\): \(O(n)\)
         '''
         total_positive = sum(true_labels) 
         total_negative = len(true_labels) - total_positive 
@@ -240,6 +244,11 @@ class Experiment():
         @param tpr list: True Positive Rate.
 
         @return AUC score.
+
+        **Computational Complexity:**
+        - Time Complexity \(T(n)\): \(O(n)\)
+        - Space Complexity \(S(n)\): \(O(1)\)
+
         '''
         auc_score = 0.0
         for i in range(1, len(fpr)):
@@ -276,9 +285,15 @@ class Experiment():
         For two class problems, the ROC method will produce a ROC plot which contains a ROC curve for each algorithm. 
         
         For multiclass classification, the ROC method will compute multiple (one versus all) curves.
+
+
+        **Computational Complexity:**
+        - Time Complexity \(T(n)\): \(O(N^2log N)\), where \(N\) is the total number of data points
+        - Space Complexity \(S(n)\): \(O(1)\)
+
         '''
 
-        plt.figure(figsize=(7, 7))
+        plt.figure(figsize=(6, 6))
 
         for i, (experiment, label_score) in enumerate(self.prob_dict.items()):
             true_labels = label_score["label"]
@@ -314,4 +329,5 @@ class Experiment():
         plt.ylabel('True Positive Rate')
         plt.title('Receiver Operating Characteristic (ROC) Curve')
         plt.legend(bbox_to_anchor=(0.95, -0.1),ncol=len(self.experiment),fontsize=6 )
+        plt.tight_layout()
         plt.show()

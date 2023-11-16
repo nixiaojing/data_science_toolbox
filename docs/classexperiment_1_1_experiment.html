@@ -236,7 +236,11 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>AUC score. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>AUC score.</dd></dl>
+<p><b>Computational Complexity:</b></p><ul>
+<li>Time Complexity (T(n)): (O(n))</li>
+<li>Space Complexity (S(n)): (O(1)) </li>
+</ul>
 
 </div>
 </div>
@@ -282,7 +286,11 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>fpr list: False Positive Rate. </dd>
 <dd>
-tpr list: True Positive Rate. </dd></dl>
+tpr list: True Positive Rate.</dd></dl>
+<p><b>Computational Complexity:</b></p><ul>
+<li>Time Complexity (T(n)): (O(n^2log n))</li>
+<li>Space Complexity (S(n)): (O(n)) </li>
+</ul>
 
 </div>
 </div>
@@ -504,7 +512,11 @@ tpr list: True Positive Rate. </dd></dl>
 
 <p>Plot ROC curves binary or multiclass classification for multiple experiments. </p>
 <p>For two class problems, the ROC method will produce a ROC plot which contains a ROC curve for each algorithm.</p>
-<p>For multiclass classification, the ROC method will compute multiple (one versus all) curves. </p>
+<p>For multiclass classification, the ROC method will compute multiple (one versus all) curves.</p>
+<p><b>Computational Complexity:</b></p><ul>
+<li>Time Complexity (T(n)): (O(N^2log N)), where (N) is the total number of data points</li>
+<li>Space Complexity (S(n)): (O(1)) </li>
+</ul>
 
 </div>
 </div>
