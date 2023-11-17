@@ -51,4 +51,7 @@ Please find more detailed documentation on the <a href="https://nixiaojing.githu
 	* `multiple_choice_responses.csv`: Qual Data: https://www.kaggle.com/c/kaggle-survey-2019/data (multiple choice). 
 	* `Sales_Transactions_Dataset_Weekly.csv`: Quant Data: https://www.kaggle.com/crawford/weekly-sales-transactions
 	* `yelp.csv`: Text Data: https://www.kaggle.com/omkarsabnis/yelp-reviews-dataset
+	
+* The `docs/` directory contains UML documentation for the toolbox, deployed at <a href="https://nixiaojing.github.io/data_science_toolbox/annotated.html">Github Pages</a>. 
+
 
