@@ -31,13 +31,13 @@ Please find more detailed documentation on the <a href="https://nixiaojing.githu
 		* c. The explore method creates visualizations of the data. 
     * `classifier_algorithm.py`: 
     	* a. simpleKNNClassifier test method 
-		* i. The train method for simplekNNClassifier has input parameters trainingData and true labels. 
-		* ii. The test method has parameters testData and k, and finds the k closest training samples and return the mode of the k labels associated from the k closest training samples. The predicted labels will be stored in a member attribute and will also be returned.
+			* i. The train method for simplekNNClassifier has input parameters trainingData and true labels. 
+			* ii. The test method has parameters testData and k, and finds the k closest training samples and return the mode of the k labels associated from the k closest training samples. The predicted labels will be stored in a member attribute and will also be returned.
     * `experiment.py`: The Experiment Constructor will take as input one data set , labels, and a list of classifiers. Each will be stored in a member attribute.
-	* a. crossValidation method takes as input kFolds. This method will perform k-fold crossvalidation, and for each fold will train all classifiers (on the training folds), and test all classifiers on the testing folds.
-	* b. The score method computes the accuracy of each classifier and present the result as a table.
-	* c. The confusionMatrix method computes and display a confusion matrix for each classifier.
-	* d. ROC related methods result in plot ROC curve for two-class and multi-class classification problems.
+		* a. crossValidation method takes as input kFolds. This method will perform k-fold crossvalidation, and for each fold will train all classifiers (on the training folds), and test all classifiers on the testing folds.
+		* b. The score method computes the accuracy of each classifier and present the result as a table.
+		* c. The confusionMatrix method computes and display a confusion matrix for each classifier.
+		* d. ROC related methods result in plot ROC curve for two-class and multi-class classification problems.
     * `test_classifier.py`: test the functionality of classifier class.
     * `test_dataset.py`: test the functionality of dataset class.
     * `test_roc.py`: test the functionality of ROC related methods in Experiment class 
