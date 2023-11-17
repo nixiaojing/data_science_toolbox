@@ -2,9 +2,9 @@
 
 The data science toolbox is written in Python. There are three classes. The toolbox is developed from scratch. No advanced libraries such as Pandas or scikit-learn were used. <br>
 <ul>
-<li> `Dataset` class is used to load and clean the different types of data. There are four subclasses to manipulate time series data, quantitative data, qualitative data, and text data. 
-<li> `Classifier` class is used to perform classification tasks on the given data. 
-<li> `Experiment` class is used to perform assessment on classification tasks. The methods such as score and confusion matrix are included. <br>
+<li> Dataset class is used to load and clean the different types of data. There are four subclasses to manipulate time series data, quantitative data, qualitative data, and text data. 
+<li> Classifier class is used to perform classification tasks on the given data. 
+<li> Experiment class is used to perform assessment on classification tasks. The methods such as score and confusion matrix are included. <br>
 Please find more detailed documentation on the <a href="https://nixiaojing.github.io/data_science_toolbox/annotated.html">Github Pages</a>. 
 
 ## Repository structure
@@ -21,7 +21,7 @@ Please find more detailed documentation on the <a href="https://nixiaojing.githu
 
 
 * The `code/` directory contains all code files
-    * `dataset.py`: DataSet Class has 5 main member methods. 
+    * `dataset.py`: DataSet Class has five main member methods. 
     	* a. The load function will prompt the user to enter the name of a file - assumedly which stores a data set to load.
 		* b. The clean method should ?clean? data according to category of data as follows:
 			* i. Quant data should fill in missing values with the mean
@@ -43,4 +43,12 @@ Please find more detailed documentation on the <a href="https://nixiaojing.githu
     * `test_roc.py`: test the functionality of ROC related methods in Experiment class 
     * `test_structure.py`: test the functionality of the toolbox structure.
 
+* The `data/` directory contains data used to test the toolbox with following files.
+	* `iris_test.csv`: 30% of IRIS data. 
+	* `iris_train.csv`: 70% of IRIS data. 
+	* `iris.csv`: IRIS data.
+	* `mitbih_test.csv`: TimeSeries: https://www.kaggle.com/shayanfazeli/heartbeat
+	* `multiple_choice_responses.csv`: Qual Data: https://www.kaggle.com/c/kaggle-survey-2019/data (multiple choice). 
+	* `Sales_Transactions_Dataset_Weekly.csv`: Quant Data: https://www.kaggle.com/crawford/weekly-sales-transactions
+	* `yelp.csv`: Text Data: https://www.kaggle.com/omkarsabnis/yelp-reviews-dataset
 
