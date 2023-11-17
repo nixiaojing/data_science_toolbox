@@ -1,4 +1,4 @@
-# data_science_toolbox
+# Data Science Toolbox
 
 The data science toolbox is written in Python. There are three classes. The toolbox is developed from scratch. No advanced libraries such as Pandas or scikit-learn were used. <br>
 <ul>
@@ -52,6 +52,6 @@ Please find more detailed documentation on the <a href="https://nixiaojing.githu
 	* `Sales_Transactions_Dataset_Weekly.csv`: Quant Data: https://www.kaggle.com/crawford/weekly-sales-transactions
 	* `yelp.csv`: Text Data: https://www.kaggle.com/omkarsabnis/yelp-reviews-dataset
 	
-* The `docs/` directory contains UML documentation for the toolbox, deployed at <a href="https://nixiaojing.github.io/data_science_toolbox/annotated.html">Github Pages</a>. 
+* The `docs/` directory contains UML-like documentation of the toolbox, deployed at <a href="https://nixiaojing.github.io/data_science_toolbox/annotated.html">Github Pages</a>. 
 
 
