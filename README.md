@@ -23,12 +23,12 @@ Please find more detailed documentation on the <a href="https://nixiaojing.githu
 * The `code/` directory contains all code files
     * `dataset.py`: DataSet Class has 5 main member methods. 
     	* a. The load function will prompt the user to enter the name of a file - assumedly which stores a data set to load.
-	* b. The clean method should ?clean? data according to category of data as follows:
-		* i. Quant data should fill in missing values with the mean
-		* ii. Qual data should fill in missing values with the median or mode
-		* iii. Time series information should run a median filter with optional parameters which determine the filter size.
-		* iv. Text data should remove stop words (and feel free to stem and / or lemmatize).
-	* c. The explore method creates visualizations of the data. 
+		* b. The clean method should ?clean? data according to category of data as follows:
+			* i. Quant data should fill in missing values with the mean
+			* ii. Qual data should fill in missing values with the median or mode
+			* iii. Time series information should run a median filter with optional parameters which determine the filter size.
+			* iv. Text data should remove stop words (and feel free to stem and / or lemmatize).
+		* c. The explore method creates visualizations of the data. 
     * `classifier_algorithm.py`: 
     	* a. simpleKNNClassifier test method 
 		* i. The train method for simplekNNClassifier has input parameters trainingData and true labels. 
