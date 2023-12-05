@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: dataset.TextDataSet Class Reference</title>
+<title>Data Science toolbox: dataset.TextDataSet Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">Data Science toolbox
    </div>
   </td>
  </tr>
@@ -102,7 +102,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a45ed05231c5ec6b963e6fcf6410a086f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text data clean to remove stopwords.  <br /></td></tr>
 <tr class="separator:a45ed05231c5ec6b963e6fcf6410a086f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a305c788e31f1850665a41a6c0fba9faa" id="r_a305c788e31f1850665a41a6c0fba9faa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdataset_1_1_text_data_set.html#a305c788e31f1850665a41a6c0fba9faa">explore</a> (self, colnm)</td></tr>
-<tr class="memdesc:a305c788e31f1850665a41a6c0fba9faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">explore dataset with plots...  <br /></td></tr>
+<tr class="memdesc:a305c788e31f1850665a41a6c0fba9faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">explore text dataset with word cloud plot.  <br /></td></tr>
 <tr class="separator:a305c788e31f1850665a41a6c0fba9faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -111,6 +111,9 @@ Public Attributes</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>text_colnm</b></td></tr>
 <tr class="memdesc:acade4011a4d069c304b6eb6fe7255240"><td class="mdescLeft">&#160;</td><td class="mdescRight">specify the text columns <br /></td></tr>
 <tr class="separator:acade4011a4d069c304b6eb6fe7255240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0926576de785d54d091a59a8c6a574c8" id="r_a0926576de785d54d091a59a8c6a574c8"><td class="memItemLeft" align="right" valign="top"><a id="a0926576de785d54d091a59a8c6a574c8" name="a0926576de785d54d091a59a8c6a574c8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>text_data</b></td></tr>
+<tr class="separator:a0926576de785d54d091a59a8c6a574c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classdataset_1_1_data_set"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classdataset_1_1_data_set')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classdataset_1_1_data_set.html">dataset.DataSet</a></td></tr>
 <tr class="memitem:aaaad70449dea3c7a3b8b56d58288b3fc inherit pub_attribs_classdataset_1_1_data_set" id="r_aaaad70449dea3c7a3b8b56d58288b3fc"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>naChar</b></td></tr>
@@ -120,13 +123,16 @@ Public Attributes</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>colnmidx</b></td></tr>
 <tr class="memdesc:a465ae8f18f1121a21a832a604cb157a9 inherit pub_attribs_classdataset_1_1_data_set"><td class="mdescLeft">&#160;</td><td class="mdescRight">user defined column name row index, default is "0" indicating the first row is the column names. <br /></td></tr>
 <tr class="separator:a465ae8f18f1121a21a832a604cb157a9 inherit pub_attribs_classdataset_1_1_data_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cf02006bd951615c7885419f5d58d62 inherit pub_attribs_classdataset_1_1_data_set" id="r_a8cf02006bd951615c7885419f5d58d62"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>filename</b></td></tr>
-<tr class="memdesc:a8cf02006bd951615c7885419f5d58d62 inherit pub_attribs_classdataset_1_1_data_set"><td class="mdescLeft">&#160;</td><td class="mdescRight">user entered file name; user entered data type, must be one of the following: "quantitative", "qualitative", "timeseries", "text". <br /></td></tr>
+<tr class="memitem:a44517ec43184915bbc5ac50c2e0b475b inherit pub_attribs_classdataset_1_1_data_set" id="r_a44517ec43184915bbc5ac50c2e0b475b"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>window_size</b></td></tr>
+<tr class="memdesc:a44517ec43184915bbc5ac50c2e0b475b inherit pub_attribs_classdataset_1_1_data_set"><td class="mdescLeft">&#160;</td><td class="mdescRight">window size for time-series data <br /></td></tr>
+<tr class="separator:a44517ec43184915bbc5ac50c2e0b475b inherit pub_attribs_classdataset_1_1_data_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf02006bd951615c7885419f5d58d62 inherit pub_attribs_classdataset_1_1_data_set" id="r_a8cf02006bd951615c7885419f5d58d62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdataset_1_1_data_set.html#a8cf02006bd951615c7885419f5d58d62">filename</a></td></tr>
+<tr class="memdesc:a8cf02006bd951615c7885419f5d58d62 inherit pub_attribs_classdataset_1_1_data_set"><td class="mdescLeft">&#160;</td><td class="mdescRight">user-provided file name contains data  <br /></td></tr>
 <tr class="separator:a8cf02006bd951615c7885419f5d58d62 inherit pub_attribs_classdataset_1_1_data_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98769522dad9a74dad9450f3f7a71252 inherit pub_attribs_classdataset_1_1_data_set" id="r_a98769522dad9a74dad9450f3f7a71252"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>datatype</b></td></tr>
-<tr class="memdesc:a98769522dad9a74dad9450f3f7a71252 inherit pub_attribs_classdataset_1_1_data_set"><td class="mdescLeft">&#160;</td><td class="mdescRight">user entered file name; user entered data type, must be one of the following: "quantitative", "qualitative", "timeseries", "text". <br /></td></tr>
+<tr class="memdesc:a98769522dad9a74dad9450f3f7a71252 inherit pub_attribs_classdataset_1_1_data_set"><td class="mdescLeft">&#160;</td><td class="mdescRight">user-provided file name contains data type <br /></td></tr>
 <tr class="separator:a98769522dad9a74dad9450f3f7a71252 inherit pub_attribs_classdataset_1_1_data_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34616c001b0fb0ae479ab2edcbfb9fe9 inherit pub_attribs_classdataset_1_1_data_set" id="r_a34616c001b0fb0ae479ab2edcbfb9fe9"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>colnms</b></td></tr>
@@ -140,14 +146,26 @@ Public Attributes</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
 <tr class="memdesc:add21409aa40685d56fa43539e68a3282 inherit pub_attribs_classdataset_1_1_data_set"><td class="mdescLeft">&#160;</td><td class="mdescRight">the user defined data extracted from input csv as a dictionary <br /></td></tr>
 <tr class="separator:add21409aa40685d56fa43539e68a3282 inherit pub_attribs_classdataset_1_1_data_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1511723ce43e2342a853ffd4c47191f6 inherit pub_attribs_classdataset_1_1_data_set" id="r_a1511723ce43e2342a853ffd4c47191f6"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>colnms_dtypes</b></td></tr>
+<tr class="memdesc:a1511723ce43e2342a853ffd4c47191f6 inherit pub_attribs_classdataset_1_1_data_set"><td class="mdescLeft">&#160;</td><td class="mdescRight">colunm names <br /></td></tr>
+<tr class="separator:a1511723ce43e2342a853ffd4c47191f6 inherit pub_attribs_classdataset_1_1_data_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b2310de2ddee2542cbe58503e682e95 inherit pub_attribs_classdataset_1_1_data_set" id="r_a4b2310de2ddee2542cbe58503e682e95"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>df_dtypes</b></td></tr>
+<tr class="memdesc:a4b2310de2ddee2542cbe58503e682e95 inherit pub_attribs_classdataset_1_1_data_set"><td class="mdescLeft">&#160;</td><td class="mdescRight">type as a dictionary with key as column name, value as the list of the data points of the given column name, this is handy when the input data is not a single vector or a mixed type. <br /></td></tr>
+<tr class="separator:a4b2310de2ddee2542cbe58503e682e95 inherit pub_attribs_classdataset_1_1_data_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38561b5ad66d7de3b1ccfbb9249e56aa inherit pub_attribs_classdataset_1_1_data_set" id="r_a38561b5ad66d7de3b1ccfbb9249e56aa"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>dtypes</b></td></tr>
+<tr class="memdesc:a38561b5ad66d7de3b1ccfbb9249e56aa inherit pub_attribs_classdataset_1_1_data_set"><td class="mdescLeft">&#160;</td><td class="mdescRight">the user defined data extracted from input csv as a dictionary <br /></td></tr>
+<tr class="separator:a38561b5ad66d7de3b1ccfbb9249e56aa inherit pub_attribs_classdataset_1_1_data_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classdataset_1_1_data_set"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdataset_1_1_data_set')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdataset_1_1_data_set.html">dataset.DataSet</a></td></tr>
-<tr class="memitem:aaeedb66924c36453a312a0a999bde21b inherit pro_methods_classdataset_1_1_data_set" id="r_aaeedb66924c36453a312a0a999bde21b"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>_DataSet__clean_col</b> (self, colnm)</td></tr>
-<tr class="memdesc:aaeedb66924c36453a312a0a999bde21b inherit pro_methods_classdataset_1_1_data_set"><td class="mdescLeft">&#160;</td><td class="mdescRight">try convert str to float if possible <br /></td></tr>
-<tr class="separator:aaeedb66924c36453a312a0a999bde21b inherit pro_methods_classdataset_1_1_data_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a44692ca062c2952d4ab1084eb87c1 inherit pro_methods_classdataset_1_1_data_set" id="r_ab6a44692ca062c2952d4ab1084eb87c1"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>_DataSet__clean_col</b> (self, colnm, **kwargs)</td></tr>
+<tr class="memdesc:ab6a44692ca062c2952d4ab1084eb87c1 inherit pro_methods_classdataset_1_1_data_set"><td class="mdescLeft">&#160;</td><td class="mdescRight">try convert str to float if possible <br /></td></tr>
+<tr class="separator:ab6a44692ca062c2952d4ab1084eb87c1 inherit pro_methods_classdataset_1_1_data_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classdataset_1_1_data_set"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classdataset_1_1_data_set')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classdataset_1_1_data_set.html">dataset.DataSet</a></td></tr>
 <tr class="memitem:a8dc16c905c37da646e23b302459540ad inherit pro_attribs_classdataset_1_1_data_set" id="r_a8dc16c905c37da646e23b302459540ad"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>_delim</b></td></tr>
@@ -262,7 +280,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>explore dataset with plots... </p>
+<p>explore text dataset with word cloud plot. </p>
 
 <p>Reimplemented from <a class="el" href="classdataset_1_1_data_set.html#a48745ae153841d305f733add2f1a5419">dataset.DataSet</a>.</p>
 

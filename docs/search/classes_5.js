@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['simpleknnclassifier_0',['simpleKNNClassifier',['../classclassifier__algorithm_1_1simple_k_n_n_classifier.html',1,'classifier_algorithm']]]
+  ['qualdataset_0',['QualDataSet',['../classdataset_1_1_qual_data_set.html',1,'dataset']]],
+  ['quantdataset_1',['QuantDataSet',['../classdataset_1_1_quant_data_set.html',1,'dataset']]]
 ];

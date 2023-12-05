@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['scale_0',['scale',['../classclassifier__algorithm_1_1simple_k_n_n_classifier.html#af65b02fbccd9f6831cd3c6aedeeccd2c',1,'classifier_algorithm::simpleKNNClassifier']]],
-  ['startingtime_1',['startingtime',['../classdataset_1_1_time_series_data_set.html#a9cb37d2df4502deacb707ad58a11bdfe',1,'dataset::TimeSeriesDataSet']]]
+  ['quali_5fcol_0',['quali_col',['../classdataset_1_1_heterogeneous_data_set.html#a17ee58de86a1f080b933a4973e916469',1,'dataset::HeterogeneousDataSet']]],
+  ['qualitative_5flist_1',['qualitative_list',['../classdataset_1_1_heterogeneous_data_set.html#aee7683aad4cbb629d9f07dafcf5cfbf2',1,'dataset::HeterogeneousDataSet']]],
+  ['quant_5fcol_2',['quant_col',['../classdataset_1_1_heterogeneous_data_set.html#a0d4fea7860fefe22106f82740849ceb1',1,'dataset::HeterogeneousDataSet']]],
+  ['quant_5fcolnms_3',['quant_colnms',['../classdataset_1_1_quant_data_set.html#a0528135805d9ec458ebbee32f665d6f5',1,'dataset::QuantDataSet']]],
+  ['quantitative_5flist_4',['quantitative_list',['../classdataset_1_1_heterogeneous_data_set.html#a07aeb5b276271ed422bad2f3247f7883',1,'dataset::HeterogeneousDataSet']]]
 ];

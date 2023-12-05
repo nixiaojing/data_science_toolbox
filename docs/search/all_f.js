@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_0',['X',['../classexperiment_1_1_experiment.html#aab7ff00326261052a51a595fca67206e',1,'experiment::Experiment']]]
+  ['window_5fsize_0',['window_size',['../classdataset_1_1_data_set.html#a44517ec43184915bbc5ac50c2e0b475b',1,'dataset::DataSet']]]
 ];

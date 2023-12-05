@@ -551,10 +551,19 @@ class HeterogeneousDataSet(DataSet):
         """
         super().__init__(**kwargs)
         
+        ## column names of qualitative data
         self.qualitative_list = []
+
+        ## column names of quantitative data
         self.quantitative_list = []
+
+        ## column names of time series data
         self.timeseries_list = []
+
+        ## column names of text data
         self.text_list = []
+
+        ## column names of other data
         self.other_list = []
 
         for key, value_list in self.dtypes.items():
@@ -574,25 +583,31 @@ class HeterogeneousDataSet(DataSet):
             else: self.other_list.append(key)
 
         if len(self.quantitative_list) > 0: 
-            
+
+            ## QuantDataSet object storing quantitative data
             self.quant_col = QuantDataSet(quant_colnms=self.quantitative_list, data_file = self.filename, dtype_file = self.datatype)
         
         if len(self.qualitative_list) > 0: 
+            ## QualDataSet object storing qualitative data
             self.quali_col = QualDataSet(qual_colnms=self.qualitative_list,data_file = self.filename, dtype_file = self.datatype) 
             
         
         if len(self.timeseries_list) > 0: 
             time = int(input('Please enter the time parameter of the timeseries data: e.g.: 1'))
             start = int(input('Please enter the start parameter of the timeseries data: e.g.: 0'))
+            ## TimeSeriesDataSet object storing timeseries data
             self.time_col = TimeSeriesDataSet(time=time, start=start, timeseries_colnames=self.timeseries_list,data_file = self.filename, dtype_file = self.datatype)
             
             
-        if len(self.text_list) > 0:       
+        if len(self.text_list) > 0:  
+            ## TextDataSet object storing text data     
             self.text_col = TextDataSet(text_colnames=self.text_list,data_file = self.filename, dtype_file = self.datatype) 
 
         if len(self.other_list) > 0:
+            ## QualDataSet object storing other data, normally will be the row index
             self.other_data = QualDataSet(qual_colnms=self.other_list,data_file = self.filename, dtype_file = self.datatype)
 
+        ## a dictionary storing all data
         self.data = {**self.other_data.qual_data, **self.quant_col.quant_data, **self.time_col.ts_data, **self.quali_col.qual_data, **self.text_col.text_data}
         
     def clean(self):
@@ -668,4 +683,23 @@ class HeterogeneousDataSet(DataSet):
         
         return
     
+    def select(self, datatype):
+        """!
+        Select a data set from read in data with single data type
+
+        @param datatype string: the data type of desired data set, 
+
+        @return a dictionary of data of the desired data type
+
+        """
+
+        if datatype == "quantitative":
+            return self.quant_col.quant_data
+        elif datatype == "qualitative":
+            return self.quali_col.qual_data
+        elif datatype == "timeseries":
+            return self.time_col.ts_data
+        elif datatype == "text":
+            return self.text_col.text_data
+        else: raise Exception("Please enter a data type from \"quantitative\", \"qualitative\", \"timeseries\", and \"text\".")
 
