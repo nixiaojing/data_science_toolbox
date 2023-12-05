@@ -1,0 +1,2 @@
+Customer_ID,spending,time_series,purchase_date,comment,gender
+other,quantitative,timeseries,qualitative,text,qualitative

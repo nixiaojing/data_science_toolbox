@@ -1,0 +1,811 @@
+Customer_ID,spending,time_series,purchase_date,comment,gender
+P1,11,12,12/2/20,My wife took me here on my birthday for breakfast and it was excellent,Male
+P2,7,6,12/2/20,I have no idea why some people give bad reviews about this place,Female
+P3,na,11,12/2/20,love the gyro plate,Female
+P4,12,8,12/2/20,Rosie,na
+P5,8,5,12/2/20,General Manager Scott Petello is a good egg,Female
+P6,3,3,12/2/20,Quiessence is simply put  beautiful,Female
+P7,4,8,12/2/20,The food is that good,Female
+P8,8,6,12/2/20,My wife took me here on my birthday for breakfast and it was excellent,Female
+P9,14,9,12/2/20,I have no idea why some people give bad reviews about this place,Female
+P10,22,19,12/2/20,love the gyro plate,Female
+P11,15,7,12/2/20,Rosie,Female
+P12,3,4,12/2/20,General Manager Scott Petello is a good egg,Female
+P13,12,10,12/2/20,Quiessence is simply put  beautiful,Female
+P14,14,12,12/2/20,The food is that good,Female
+P15,19,45,12/2/20,My wife took me here on my birthday for breakfast and it was excellent,Female
+P16,30,27,12/2/20,I have no idea why some people give bad reviews about this place,Female
+P17,49,40,12/2/20,love the gyro plate,Female
+P18,40,38,12/2/20,Rosie,Female
+P19,26,31,12/20/20,General Manager Scott Petello is a good egg,Male
+P20,13,17,12/21/20,Quiessence is simply put  beautiful,Male
+P21,4,5,12/22/20,The food is that good,Male
+P22,8,14,12/23/20,My wife took me here on my birthday for breakfast and it was excellent,Male
+P23,3,5,12/24/20,I have no idea why some people give bad reviews about this place,Male
+P24,36,42,12/25/20,love the gyro plate,Male
+P25,26,28,12/26/20,Rosie,Male
+P26,14,14,12/27/20,General Manager Scott Petello is a good egg,Male
+P27,44,34,12/28/20,Quiessence is simply put  beautiful,Male
+P28,34,32,12/29/20,The food is that good,Male
+P29,13,10,12/30/20,My wife took me here on my birthday for breakfast and it was excellent,Male
+P30,46,36,12/31/20,I have no idea why some people give bad reviews about this place,Male
+P31,7,17,1/1/21,love the gyro plate,Male
+P32,15,13,1/2/21,Rosie,Male
+P33,15,12,1/3/21,General Manager Scott Petello is a good egg,Male
+P34,47,42,1/4/21,Quiessence is simply put  beautiful,Male
+P35,34,37,1/5/21,The food is that good,Male
+P36,41,32,1/6/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P37,36,39,1/7/21,I have no idea why some people give bad reviews about this place,Male
+P38,37,36,1/8/21,love the gyro plate,Male
+P39,31,21,1/9/21,Rosie,Male
+P40,21,27,1/10/21,General Manager Scott Petello is a good egg,Male
+P41,35,27,1/11/21,Quiessence is simply put  beautiful,Male
+P42,42,27,1/12/21,The food is that good,Male
+P43,28,43,1/13/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P44,34,27,1/14/21,I have no idea why some people give bad reviews about this place,Male
+P45,40,29,1/15/21,love the gyro plate,Male
+P46,27,46,1/16/21,Rosie,Male
+P47,40,42,1/17/21,General Manager Scott Petello is a good egg,Male
+P48,29,51,1/18/21,Quiessence is simply put  beautiful,Male
+P49,37,28,1/19/21,The food is that good,Male
+P50,12,3,1/20/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P51,19,14,1/21/21,I have no idea why some people give bad reviews about this place,Male
+P52,40,44,1/22/21,love the gyro plate,Male
+P53,2,5,1/23/21,Rosie,Male
+P54,41,42,1/24/21,General Manager Scott Petello is a good egg,Male
+P55,34,30,1/24/21,Quiessence is simply put  beautiful,Male
+P56,31,28,1/24/21,The food is that good,Male
+P57,38,26,1/24/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P58,32,34,1/24/21,I have no idea why some people give bad reviews about this place,Male
+P59,5,13,1/24/21,love the gyro plate,Male
+P60,37,41,1/24/21,Rosie,Male
+P61,25,30,1/24/21,General Manager Scott Petello is a good egg,Male
+P62,12,27,1/24/21,Quiessence is simply put  beautiful,Male
+P63,37,39,1/24/21,The food is that good,Male
+P64,34,37,1/24/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P65,14,10,1/24/21,I have no idea why some people give bad reviews about this place,Male
+P66,35,41,1/24/21,love the gyro plate,Male
+P67,36,30,1/24/21,Rosie,Male
+P68,14,11,1/24/21,General Manager Scott Petello is a good egg,Male
+P69,26,43,1/24/21,Quiessence is simply put  beautiful,Male
+P70,31,39,1/24/21,The food is that good,Male
+P71,7,11,1/24/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P72,26,34,1/24/21,I have no idea why some people give bad reviews about this place,Male
+P73,35,30,1/24/21,love the gyro plate,Male
+P74,8,9,2/13/21,Rosie,Male
+P75,34,45,2/14/21,General Manager Scott Petello is a good egg,Male
+P76,27,34,2/15/21,Quiessence is simply put  beautiful,Male
+P77,7,7,2/16/21,The food is that good,Male
+P78,39,40,2/17/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P79,37,34,2/18/21,I have no idea why some people give bad reviews about this place,Male
+P80,38,29,2/19/21,love the gyro plate,Male
+P81,14,6,2/20/21,Rosie,Male
+P82,10,12,2/21/21,General Manager Scott Petello is a good egg,Male
+P83,46,40,2/22/21,Quiessence is simply put  beautiful,Male
+P84,29,26,2/23/21,The food is that good,Male
+P85,39,34,2/24/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P86,37,33,2/25/21,I have no idea why some people give bad reviews about this place,Male
+P87,30,38,2/26/21,love the gyro plate,Male
+P88,41,28,2/27/21,Rosie,Female
+P89,24,26,2/28/21,General Manager Scott Petello is a good egg,Female
+P90,42,34,3/1/21,Quiessence is simply put  beautiful,Female
+P91,10,11,3/2/21,The food is that good,Female
+P92,26,36,3/3/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P93,11,9,3/4/21,I have no idea why some people give bad reviews about this place,Female
+P94,14,9,3/5/21,love the gyro plate,Female
+P95,12,15,3/6/21,Rosie,Female
+P96,31,35,3/7/21,General Manager Scott Petello is a good egg,Female
+P97,29,37,3/8/21,Quiessence is simply put  beautiful,Female
+P98,4,2,3/9/21,The food is that good,Female
+P99,16,11,3/10/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P100,13,6,3/11/21,I have no idea why some people give bad reviews about this place,Female
+P101,26,51,3/12/21,love the gyro plate,Female
+P102,34,41,3/13/21,Rosie,Female
+P103,7,5,3/14/21,General Manager Scott Petello is a good egg,Female
+P104,4,4,3/15/21,Quiessence is simply put  beautiful,Female
+P105,2,3,3/16/21,The food is that good,Female
+P106,11,10,3/17/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P107,19,19,3/18/21,I have no idea why some people give bad reviews about this place,Female
+P108,0,2,3/19/21,love the gyro plate,Female
+P109,9,8,3/20/21,Rosie,Female
+P110,9,12,3/21/21,General Manager Scott Petello is a good egg,Female
+P111,5,4,3/22/21,Quiessence is simply put  beautiful,Female
+P112,31,36,3/23/21,The food is that good,Female
+P113,22,26,3/24/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P114,7,6,3/25/21,I have no idea why some people give bad reviews about this place,Female
+P115,9,9,3/26/21,love the gyro plate,Female
+P116,13,7,3/27/21,Rosie,Female
+P117,6,2,3/28/21,General Manager Scott Petello is a good egg,Female
+P118,16,13,3/29/21,Quiessence is simply put  beautiful,Female
+P119,30,40,3/29/21,The food is that good,Female
+P120,37,35,3/29/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P121,7,10,3/29/21,I have no idea why some people give bad reviews about this place,Female
+P122,7,10,3/29/21,love the gyro plate,Female
+P123,5,5,3/29/21,Rosie,Female
+P124,4,6,3/29/21,General Manager Scott Petello is a good egg,Female
+P125,6,9,3/29/21,Quiessence is simply put  beautiful,Female
+P126,3,8,3/29/21,The food is that good,Female
+P127,4,0,3/29/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P128,36,43,3/29/21,I have no idea why some people give bad reviews about this place,Female
+P129,21,36,3/29/21,love the gyro plate,Female
+P130,19,53,3/29/21,Rosie,Female
+P131,29,32,3/29/21,General Manager Scott Petello is a good egg,Female
+P132,39,36,3/29/21,Quiessence is simply put  beautiful,Female
+P133,30,48,3/29/21,The food is that good,Female
+P134,32,41,3/29/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P135,38,32,3/29/21,I have no idea why some people give bad reviews about this place,Female
+P136,39,37,3/29/21,love the gyro plate,Female
+P137,37,41,3/29/21,Rosie,Female
+P138,36,44,3/29/21,General Manager Scott Petello is a good egg,Female
+P139,32,36,3/29/21,Quiessence is simply put  beautiful,Female
+P140,28,36,3/29/21,The food is that good,Female
+P141,27,45,3/29/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P142,23,29,3/29/21,I have no idea why some people give bad reviews about this place,Female
+P143,31,35,3/29/21,love the gyro plate,Female
+P144,9,13,3/29/21,Rosie,Female
+P145,10,12,3/29/21,General Manager Scott Petello is a good egg,Male
+P146,7,13,3/29/21,Quiessence is simply put  beautiful,Male
+P147,10,4,3/29/21,The food is that good,Male
+P148,3,2,3/29/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P149,11,9,3/29/21,I have no idea why some people give bad reviews about this place,Male
+P150,4,3,3/29/21,love the gyro plate,Male
+P151,3,7,3/29/21,Rosie,Male
+P152,11,10,3/29/21,General Manager Scott Petello is a good egg,Male
+P153,22,9,3/29/21,Quiessence is simply put  beautiful,Male
+P154,12,14,3/29/21,The food is that good,Male
+P155,5,7,3/29/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P156,1,4,3/29/21,I have no idea why some people give bad reviews about this place,Male
+P157,12,8,3/29/21,love the gyro plate,Male
+P158,8,3,3/29/21,Rosie,Male
+P159,2,2,3/29/21,General Manager Scott Petello is a good egg,Male
+P160,9,8,3/29/21,Quiessence is simply put  beautiful,Male
+P161,5,6,3/29/21,The food is that good,Male
+P162,13,9,3/29/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P163,6,5,3/29/21,I have no idea why some people give bad reviews about this place,Male
+P164,9,5,3/29/21,love the gyro plate,Male
+P165,9,13,3/29/21,Rosie,Male
+P166,7,10,3/29/21,General Manager Scott Petello is a good egg,Male
+P167,33,45,3/29/21,Quiessence is simply put  beautiful,Male
+P168,34,29,3/29/21,The food is that good,Male
+P169,38,31,3/29/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P170,29,37,5/20/21,I have no idea why some people give bad reviews about this place,Male
+P171,6,7,5/21/21,love the gyro plate,Male
+P172,32,48,5/22/21,Rosie,Male
+P173,34,25,5/23/21,General Manager Scott Petello is a good egg,Male
+P174,37,42,5/24/21,Quiessence is simply put  beautiful,Male
+P175,30,40,5/25/21,The food is that good,Male
+P176,38,44,5/26/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P177,25,38,5/27/21,I have no idea why some people give bad reviews about this place,Male
+P178,35,34,5/28/21,love the gyro plate,Male
+P179,44,43,5/29/21,Rosie,Male
+P180,40,38,5/30/21,General Manager Scott Petello is a good egg,Male
+P181,32,44,5/31/21,Quiessence is simply put  beautiful,Male
+P182,42,28,6/1/21,The food is that good,Male
+P183,25,37,6/2/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P184,30,37,6/3/21,I have no idea why some people give bad reviews about this place,Male
+P185,32,28,6/4/21,love the gyro plate,Male
+P186,36,34,6/5/21,Rosie,Male
+P187,31,38,6/6/21,General Manager Scott Petello is a good egg,Male
+P188,33,34,6/7/21,Quiessence is simply put  beautiful,Male
+P189,32,34,6/8/21,The food is that good,Male
+P190,54,41,6/9/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P191,48,36,6/10/21,I have no idea why some people give bad reviews about this place,Male
+P192,24,33,6/11/21,love the gyro plate,Male
+P193,36,22,6/12/21,Rosie,Male
+P194,35,37,6/13/21,General Manager Scott Petello is a good egg,Male
+P195,4,4,6/14/21,Quiessence is simply put  beautiful,Male
+P196,43,34,6/15/21,The food is that good,Male
+P197,6,8,6/16/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P198,7,19,6/17/21,I have no idea why some people give bad reviews about this place,Male
+P199,4,1,6/18/21,love the gyro plate,Male
+P200,18,14,6/19/21,Rosie,Male
+P201,1,3,6/20/21,General Manager Scott Petello is a good egg,Male
+P202,10,10,6/21/21,Quiessence is simply put  beautiful,Male
+P203,9,7,6/22/21,The food is that good,Male
+P204,1,2,6/23/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P205,11,7,6/24/21,I have no idea why some people give bad reviews about this place,Male
+P206,1,0,6/25/21,love the gyro plate,Male
+P207,2,5,6/26/21,Rosie,Male
+P208,30,26,6/27/21,General Manager Scott Petello is a good egg,Male
+P209,12,6,6/28/21,Quiessence is simply put  beautiful,Male
+P210,16,12,6/29/21,The food is that good,Male
+P211,15,12,6/30/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P212,0,0,7/1/21,I have no idea why some people give bad reviews about this place,Male
+P213,0,0,7/2/21,love the gyro plate,Male
+P214,0,0,7/3/21,Rosie,Male
+P215,0,0,7/4/21,General Manager Scott Petello is a good egg,Male
+P216,0,0,7/5/21,Quiessence is simply put  beautiful,Male
+P217,0,0,7/6/21,The food is that good,Male
+P218,0,0,7/7/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P219,0,0,7/8/21,I have no idea why some people give bad reviews about this place,Male
+P220,0,0,7/9/21,love the gyro plate,Male
+P221,0,0,7/10/21,Rosie,Male
+P222,0,0,7/11/21,General Manager Scott Petello is a good egg,Male
+P223,0,0,7/12/21,Quiessence is simply put  beautiful,Male
+P224,0,0,7/13/21,The food is that good,Male
+P225,0,0,7/14/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P226,0,0,7/15/21,I have no idea why some people give bad reviews about this place,Male
+P227,1,0,7/16/21,love the gyro plate,Male
+P228,0,0,7/17/21,Rosie,Male
+P229,0,0,7/18/21,General Manager Scott Petello is a good egg,Male
+P230,0,0,7/19/21,Quiessence is simply put  beautiful,Male
+P231,0,0,7/19/21,The food is that good,Male
+P232,0,0,7/19/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P233,0,0,7/19/21,I have no idea why some people give bad reviews about this place,Male
+P234,0,0,7/19/21,love the gyro plate,Male
+P235,0,0,7/19/21,Rosie,Male
+P236,0,0,7/19/21,General Manager Scott Petello is a good egg,Male
+P237,0,0,7/19/21,Quiessence is simply put  beautiful,Male
+P238,0,0,7/19/21,The food is that good,Male
+P239,0,0,7/19/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P240,0,0,7/19/21,I have no idea why some people give bad reviews about this place,Male
+P241,0,0,7/19/21,love the gyro plate,Male
+P242,0,0,7/19/21,Rosie,Male
+P243,0,0,7/19/21,General Manager Scott Petello is a good egg,Male
+P244,0,0,7/19/21,Quiessence is simply put  beautiful,Male
+P245,2,0,7/19/21,The food is that good,Male
+P246,0,0,7/19/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P247,1,1,7/19/21,I have no idea why some people give bad reviews about this place,Male
+P248,0,0,7/19/21,love the gyro plate,Male
+P249,0,0,7/19/21,Rosie,Male
+P250,0,0,7/19/21,General Manager Scott Petello is a good egg,Male
+P251,0,0,7/19/21,Quiessence is simply put  beautiful,Male
+P252,0,0,7/19/21,The food is that good,Male
+P253,0,0,7/19/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P254,0,0,7/19/21,I have no idea why some people give bad reviews about this place,Male
+P255,1,0,7/19/21,love the gyro plate,Male
+P256,0,0,7/19/21,Rosie,Male
+P257,0,0,7/19/21,General Manager Scott Petello is a good egg,Male
+P258,0,0,7/19/21,Quiessence is simply put  beautiful,Male
+P259,0,0,7/19/21,The food is that good,Male
+P260,0,0,7/19/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P261,20,36,7/19/21,I have no idea why some people give bad reviews about this place,Male
+P262,25,31,7/19/21,love the gyro plate,Male
+P263,18,12,7/19/21,Rosie,Male
+P264,8,16,7/19/21,General Manager Scott Petello is a good egg,Male
+P265,0,1,7/19/21,Quiessence is simply put  beautiful,Male
+P266,6,8,7/19/21,The food is that good,Male
+P267,8,14,7/19/21,My wife took me here on my birthday for breakfast and it was excellent,Male
+P268,18,18,7/19/21,I have no idea why some people give bad reviews about this place,Male
+P269,7,11,7/19/21,love the gyro plate,Female
+P270,26,16,7/19/21,Rosie,Female
+P271,3,3,7/19/21,General Manager Scott Petello is a good egg,Female
+P272,0,0,7/19/21,Quiessence is simply put  beautiful,Female
+P273,0,0,7/19/21,The food is that good,Female
+P274,0,0,7/19/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P275,0,1,7/19/21,I have no idea why some people give bad reviews about this place,Female
+P276,0,0,7/19/21,love the gyro plate,Female
+P277,0,0,7/19/21,Rosie,Female
+P278,0,0,7/19/21,General Manager Scott Petello is a good egg,Female
+P279,0,0,7/19/21,Quiessence is simply put  beautiful,Female
+P280,0,1,7/19/21,The food is that good,Female
+P281,1,0,7/19/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P282,0,0,7/19/21,I have no idea why some people give bad reviews about this place,Female
+P283,0,0,7/19/21,love the gyro plate,Female
+P284,26,17,7/19/21,Rosie,Female
+P285,11,12,7/19/21,General Manager Scott Petello is a good egg,Female
+P286,17,19,7/19/21,Quiessence is simply put  beautiful,Female
+P287,0,0,7/19/21,The food is that good,Female
+P288,1,1,7/19/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P289,0,1,7/19/21,I have no idea why some people give bad reviews about this place,Female
+P290,0,0,7/19/21,love the gyro plate,Female
+P291,2,2,7/19/21,Rosie,Female
+P292,2,7,7/19/21,General Manager Scott Petello is a good egg,Female
+P293,6,3,7/19/21,Quiessence is simply put  beautiful,Female
+P294,9,13,7/19/21,The food is that good,Female
+P295,3,6,7/19/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P296,7,5,7/19/21,I have no idea why some people give bad reviews about this place,Female
+P297,3,4,7/19/21,love the gyro plate,Female
+P298,5,7,7/19/21,Rosie,Female
+P299,10,8,7/19/21,General Manager Scott Petello is a good egg,Female
+P300,6,7,9/27/21,Quiessence is simply put  beautiful,Female
+P301,7,1,9/28/21,The food is that good,Female
+P302,4,2,9/29/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P303,3,5,9/30/21,I have no idea why some people give bad reviews about this place,Female
+P304,7,6,10/1/21,love the gyro plate,Female
+P305,8,7,10/2/21,Rosie,Female
+P306,4,2,10/3/21,General Manager Scott Petello is a good egg,Female
+P307,4,5,10/4/21,Quiessence is simply put  beautiful,Female
+P308,7,3,10/5/21,The food is that good,Female
+P309,9,5,10/6/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P310,5,4,10/7/21,I have no idea why some people give bad reviews about this place,Female
+P311,8,6,10/8/21,love the gyro plate,Female
+P312,3,2,10/9/21,Rosie,Female
+P313,10,1,10/10/21,General Manager Scott Petello is a good egg,Female
+P314,6,17,10/11/21,Quiessence is simply put  beautiful,Female
+P315,5,7,10/12/21,The food is that good,Female
+P316,4,5,10/13/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P317,2,3,10/14/21,I have no idea why some people give bad reviews about this place,Female
+P318,3,5,10/15/21,love the gyro plate,Female
+P319,5,4,10/16/21,Rosie,Female
+P320,2,5,10/17/21,General Manager Scott Petello is a good egg,Female
+P321,3,6,10/18/21,Quiessence is simply put  beautiful,Female
+P322,4,5,10/19/21,The food is that good,Female
+P323,3,7,10/20/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P324,11,11,10/21/21,I have no idea why some people give bad reviews about this place,Female
+P325,7,6,10/22/21,love the gyro plate,Female
+P326,3,11,10/23/21,Rosie,Female
+P327,2,5,10/24/21,General Manager Scott Petello is a good egg,Female
+P328,4,6,10/25/21,Quiessence is simply put  beautiful,Female
+P329,2,6,10/26/21,The food is that good,Female
+P330,4,4,10/27/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P331,7,6,10/28/21,I have no idea why some people give bad reviews about this place,Female
+P332,10,14,10/29/21,love the gyro plate,Female
+P333,9,9,10/30/21,Rosie,Female
+P334,11,13,10/31/21,General Manager Scott Petello is a good egg,Female
+P335,6,4,11/1/21,Quiessence is simply put  beautiful,Female
+P336,2,3,11/2/21,The food is that good,Female
+P337,3,6,11/3/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P338,2,2,11/4/21,I have no idea why some people give bad reviews about this place,Female
+P339,0,0,11/5/21,love the gyro plate,Female
+P340,0,0,11/6/21,Rosie,Female
+P341,5,1,11/7/21,General Manager Scott Petello is a good egg,Female
+P342,3,2,11/8/21,Quiessence is simply put  beautiful,Female
+P343,0,0,11/9/21,The food is that good,Female
+P344,1,2,11/10/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P345,2,3,11/11/21,I have no idea why some people give bad reviews about this place,Female
+P346,0,0,11/12/21,love the gyro plate,Female
+P347,1,0,11/13/21,Rosie,Female
+P348,1,0,11/14/21,General Manager Scott Petello is a good egg,Female
+P349,0,0,11/15/21,Quiessence is simply put  beautiful,Female
+P350,0,0,11/16/21,The food is that good,Female
+P351,0,0,11/17/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P352,0,0,11/18/21,I have no idea why some people give bad reviews about this place,Female
+P354,0,0,11/19/21,love the gyro plate,Female
+P355,0,0,11/20/21,Rosie,Female
+P356,4,6,11/21/21,General Manager Scott Petello is a good egg,Female
+P357,3,1,11/22/21,Quiessence is simply put  beautiful,Female
+P358,1,1,11/23/21,The food is that good,Female
+P359,3,5,11/24/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P360,0,1,11/25/21,I have no idea why some people give bad reviews about this place,Female
+P361,6,3,11/26/21,love the gyro plate,Female
+P362,1,0,11/27/21,Rosie,Female
+P363,2,1,11/28/21,General Manager Scott Petello is a good egg,Female
+P364,10,18,11/29/21,Quiessence is simply put  beautiful,Female
+P365,6,5,11/30/21,The food is that good,Female
+P366,2,2,12/1/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P367,0,2,12/2/21,I have no idea why some people give bad reviews about this place,Female
+P368,0,5,12/3/21,love the gyro plate,Female
+P369,3,2,12/4/21,Rosie,Female
+P370,6,2,12/5/21,General Manager Scott Petello is a good egg,Female
+P371,2,4,12/6/21,Quiessence is simply put  beautiful,Female
+P372,1,2,12/7/21,The food is that good,Female
+P373,0,3,12/8/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P374,1,1,12/9/21,I have no idea why some people give bad reviews about this place,Female
+P375,1,0,12/10/21,love the gyro plate,Female
+P376,0,0,12/11/21,Rosie,Female
+P377,1,0,12/12/21,General Manager Scott Petello is a good egg,Female
+P378,0,0,12/13/21,Quiessence is simply put  beautiful,Female
+P379,0,1,12/14/21,The food is that good,Female
+P380,0,0,12/15/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P381,0,0,12/16/21,I have no idea why some people give bad reviews about this place,Female
+P382,0,0,12/17/21,love the gyro plate,Female
+P383,0,0,12/18/21,Rosie,Female
+P384,1,0,12/19/21,General Manager Scott Petello is a good egg,Female
+P386,0,0,12/20/21,Quiessence is simply put  beautiful,Female
+P387,5,3,12/21/21,The food is that good,Female
+P388,5,2,12/22/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P389,2,3,12/23/21,I have no idea why some people give bad reviews about this place,Female
+P390,4,4,12/24/21,love the gyro plate,Female
+P391,0,1,12/25/21,Rosie,Female
+P392,3,3,12/26/21,General Manager Scott Petello is a good egg,Female
+P393,1,0,12/27/21,Quiessence is simply put  beautiful,Female
+P394,1,4,12/28/21,The food is that good,Female
+P395,1,1,12/29/21,My wife took me here on my birthday for breakfast and it was excellent,Female
+P396,0,1,12/30/21,I have no idea why some people give bad reviews about this place,Female
+P397,10,7,12/31/21,love the gyro plate,Female
+P398,14,12,1/1/22,Rosie,Female
+P399,17,11,1/2/22,General Manager Scott Petello is a good egg,Female
+P400,20,11,1/3/22,Quiessence is simply put  beautiful,Female
+P401,3,5,1/4/22,The food is that good,Female
+P402,1,0,1/5/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P403,12,8,1/6/22,I have no idea why some people give bad reviews about this place,Female
+P404,11,8,1/7/22,love the gyro plate,Female
+P405,23,12,1/8/22,Rosie,Female
+P406,6,12,1/9/22,General Manager Scott Petello is a good egg,Female
+P407,22,23,1/10/22,Quiessence is simply put  beautiful,Female
+P408,7,10,1/11/22,The food is that good,Female
+P409,42,48,1/12/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P410,6,13,1/13/22,I have no idea why some people give bad reviews about this place,Female
+P411,16,17,1/14/22,love the gyro plate,Female
+P412,4,2,1/15/22,Rosie,Female
+P413,4,6,1/16/22,General Manager Scott Petello is a good egg,Female
+P414,2,2,1/17/22,Quiessence is simply put  beautiful,Female
+P415,2,4,1/18/22,The food is that good,Female
+P416,1,1,1/19/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P417,0,0,1/20/22,I have no idea why some people give bad reviews about this place,Female
+P418,0,0,1/21/22,love the gyro plate,Female
+P419,0,0,1/22/22,Rosie,Female
+P420,0,0,1/23/22,General Manager Scott Petello is a good egg,Female
+P421,0,0,1/24/22,Quiessence is simply put  beautiful,Female
+P422,1,1,1/25/22,The food is that good,Female
+P423,0,0,1/26/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P424,0,0,1/27/22,I have no idea why some people give bad reviews about this place,Female
+P425,0,0,1/28/22,love the gyro plate,Female
+P426,0,0,1/29/22,Rosie,Female
+P427,0,0,1/30/22,General Manager Scott Petello is a good egg,Female
+P428,0,0,1/31/22,Quiessence is simply put  beautiful,Female
+P429,16,9,2/1/22,The food is that good,Female
+P430,13,8,2/2/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P431,3,6,2/3/22,I have no idea why some people give bad reviews about this place,Female
+P432,6,7,2/4/22,love the gyro plate,Female
+P433,2,4,2/5/22,Rosie,Male
+P434,2,0,2/6/22,General Manager Scott Petello is a good egg,Male
+P435,21,16,2/7/22,Quiessence is simply put  beautiful,Male
+P436,14,5,2/8/22,The food is that good,Male
+P437,7,4,2/9/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P438,1,1,2/10/22,I have no idea why some people give bad reviews about this place,Male
+P439,1,0,2/11/22,love the gyro plate,Male
+P440,1,0,2/12/22,Rosie,Male
+P441,0,0,2/13/22,General Manager Scott Petello is a good egg,Male
+P442,0,0,2/14/22,Quiessence is simply put  beautiful,Male
+P443,0,1,2/15/22,The food is that good,Male
+P444,0,0,2/16/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P445,0,0,2/17/22,I have no idea why some people give bad reviews about this place,Male
+P446,0,1,2/18/22,love the gyro plate,Male
+P447,0,0,2/19/22,Rosie,Male
+P448,0,2,2/20/22,General Manager Scott Petello is a good egg,Male
+P449,0,0,2/21/22,Quiessence is simply put  beautiful,Male
+P450,1,0,2/22/22,The food is that good,Male
+P451,1,0,2/23/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P452,0,0,2/24/22,I have no idea why some people give bad reviews about this place,Male
+P453,0,0,2/25/22,love the gyro plate,Male
+P454,0,0,2/26/22,Rosie,Male
+P455,0,0,2/27/22,General Manager Scott Petello is a good egg,Male
+P456,0,0,2/28/22,Quiessence is simply put  beautiful,Male
+P457,0,0,3/1/22,The food is that good,Male
+P458,0,0,3/2/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P459,0,1,3/3/22,I have no idea why some people give bad reviews about this place,Male
+P460,1,0,3/4/22,love the gyro plate,Male
+P461,0,0,3/5/22,Rosie,Male
+P462,0,0,3/6/22,General Manager Scott Petello is a good egg,Male
+P463,0,0,3/7/22,Quiessence is simply put  beautiful,Male
+P464,0,0,3/8/22,The food is that good,Male
+P465,0,0,3/9/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P466,0,0,3/10/22,I have no idea why some people give bad reviews about this place,Male
+P467,0,0,3/11/22,love the gyro plate,Male
+P468,0,0,3/12/22,Rosie,Male
+P469,0,0,3/13/22,General Manager Scott Petello is a good egg,Male
+P470,0,0,3/14/22,Quiessence is simply put  beautiful,Male
+P471,0,0,3/15/22,The food is that good,Male
+P472,0,0,3/16/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P473,0,0,3/17/22,I have no idea why some people give bad reviews about this place,Male
+P474,0,0,3/18/22,love the gyro plate,Male
+P475,3,5,3/19/22,Rosie,Male
+P476,1,0,3/20/22,General Manager Scott Petello is a good egg,Male
+P477,1,0,3/21/22,Quiessence is simply put  beautiful,Male
+P478,1,0,3/22/22,The food is that good,Male
+P479,0,3,3/23/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P480,0,0,3/24/22,I have no idea why some people give bad reviews about this place,Male
+P481,1,2,3/25/22,love the gyro plate,Male
+P482,0,0,3/26/22,Rosie,Male
+P483,0,0,3/27/22,General Manager Scott Petello is a good egg,Male
+P484,3,5,3/28/22,Quiessence is simply put  beautiful,Male
+P485,15,9,3/29/22,The food is that good,Male
+P486,16,30,3/30/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P487,7,10,3/31/22,I have no idea why some people give bad reviews about this place,Male
+P488,10,11,4/1/22,love the gyro plate,Male
+P489,5,8,4/2/22,Rosie,Male
+P490,6,7,4/3/22,General Manager Scott Petello is a good egg,Male
+P491,19,20,4/4/22,Quiessence is simply put  beautiful,Male
+P492,9,14,4/5/22,The food is that good,Male
+P493,9,9,4/6/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P494,6,13,4/7/22,I have no idea why some people give bad reviews about this place,Male
+P495,16,15,4/8/22,love the gyro plate,Male
+P496,5,3,4/9/22,Rosie,Male
+P497,5,4,4/10/22,General Manager Scott Petello is a good egg,Male
+P498,4,4,4/11/22,Quiessence is simply put  beautiful,Male
+P499,11,13,4/12/22,The food is that good,Male
+P500,8,8,4/13/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P501,4,5,4/14/22,I have no idea why some people give bad reviews about this place,Male
+P502,11,15,4/15/22,love the gyro plate,Male
+P503,13,19,4/16/22,Rosie,Male
+P504,10,13,4/17/22,General Manager Scott Petello is a good egg,Male
+P505,23,4,4/18/22,Quiessence is simply put  beautiful,Male
+P506,23,16,4/19/22,The food is that good,Male
+P507,11,27,4/20/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P508,9,10,4/21/22,I have no idea why some people give bad reviews about this place,Male
+P509,9,5,4/22/22,love the gyro plate,Male
+P510,9,4,4/23/22,Rosie,Male
+P511,25,23,4/24/22,General Manager Scott Petello is a good egg,Male
+P512,17,17,4/25/22,Quiessence is simply put  beautiful,Male
+P513,22,23,4/26/22,The food is that good,Male
+P514,7,14,4/27/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P515,10,15,4/28/22,I have no idea why some people give bad reviews about this place,Male
+P516,24,18,4/29/22,love the gyro plate,Male
+P517,15,15,4/30/22,Rosie,Male
+P518,15,6,5/1/22,General Manager Scott Petello is a good egg,Male
+P519,30,26,5/2/22,Quiessence is simply put  beautiful,Male
+P520,9,12,5/3/22,The food is that good,Male
+P521,8,14,5/4/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P522,12,15,5/5/22,I have no idea why some people give bad reviews about this place,Male
+P523,8,14,5/6/22,love the gyro plate,Male
+P524,14,9,5/7/22,Rosie,Male
+P525,15,12,5/8/22,General Manager Scott Petello is a good egg,Male
+P526,9,13,5/9/22,Quiessence is simply put  beautiful,Male
+P527,7,18,5/10/22,The food is that good,Male
+P528,9,9,5/11/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P529,13,17,5/12/22,I have no idea why some people give bad reviews about this place,Male
+P530,20,11,5/13/22,love the gyro plate,Male
+P531,4,8,5/14/22,Rosie,Male
+P532,15,5,5/15/22,General Manager Scott Petello is a good egg,Male
+P533,28,33,5/16/22,Quiessence is simply put  beautiful,Male
+P534,6,10,5/17/22,The food is that good,Male
+P535,15,26,5/18/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P536,14,9,5/19/22,I have no idea why some people give bad reviews about this place,Male
+P537,20,16,5/20/22,love the gyro plate,Male
+P538,7,7,5/21/22,Rosie,Male
+P539,9,10,5/22/22,General Manager Scott Petello is a good egg,Male
+P540,23,19,5/23/22,Quiessence is simply put  beautiful,Male
+P541,11,17,5/24/22,The food is that good,Male
+P542,12,14,5/25/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P543,9,6,5/26/22,I have no idea why some people give bad reviews about this place,Male
+P544,15,10,5/27/22,love the gyro plate,Male
+P545,13,13,5/28/22,Rosie,Male
+P546,10,14,5/29/22,General Manager Scott Petello is a good egg,Male
+P547,9,6,5/30/22,Quiessence is simply put  beautiful,Male
+P548,32,28,5/31/22,The food is that good,Male
+P549,35,29,6/1/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P550,11,10,6/2/22,I have no idea why some people give bad reviews about this place,Male
+P551,5,8,6/3/22,love the gyro plate,Male
+P552,15,9,6/4/22,Rosie,Male
+P553,2,2,6/5/22,General Manager Scott Petello is a good egg,Male
+P554,24,15,6/6/22,Quiessence is simply put  beautiful,Male
+P555,10,16,6/7/22,The food is that good,Male
+P556,15,11,6/8/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P557,28,23,6/9/22,I have no idea why some people give bad reviews about this place,Male
+P558,15,10,6/10/22,love the gyro plate,Male
+P559,11,13,6/11/22,Rosie,Male
+P560,9,9,6/12/22,General Manager Scott Petello is a good egg,Male
+P561,6,5,6/13/22,Quiessence is simply put  beautiful,Male
+P562,6,5,6/14/22,The food is that good,Male
+P563,5,19,6/15/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P564,13,4,6/16/22,I have no idea why some people give bad reviews about this place,Male
+P565,4,7,6/17/22,love the gyro plate,Male
+P566,24,26,6/18/22,Rosie,Male
+P567,3,7,6/19/22,General Manager Scott Petello is a good egg,Male
+P568,4,2,6/20/22,Quiessence is simply put  beautiful,Male
+P569,1,3,6/21/22,The food is that good,Male
+P570,2,2,6/22/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P571,4,3,6/23/22,I have no idea why some people give bad reviews about this place,Male
+P572,2,0,6/24/22,love the gyro plate,Male
+P573,1,2,6/25/22,Rosie,Male
+P574,0,1,6/26/22,General Manager Scott Petello is a good egg,Male
+P575,0,0,6/27/22,Quiessence is simply put  beautiful,Male
+P576,0,0,6/28/22,The food is that good,Male
+P577,1,1,6/29/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P578,1,0,6/30/22,I have no idea why some people give bad reviews about this place,Male
+P579,0,0,7/1/22,love the gyro plate,Male
+P580,1,5,7/2/22,Rosie,Male
+P581,2,2,7/3/22,General Manager Scott Petello is a good egg,Male
+P582,3,4,7/4/22,Quiessence is simply put  beautiful,Male
+P583,2,1,7/5/22,The food is that good,Male
+P584,2,3,7/6/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P585,1,0,7/7/22,I have no idea why some people give bad reviews about this place,Male
+P586,7,2,7/8/22,love the gyro plate,Male
+P587,4,4,7/9/22,Rosie,Male
+P588,5,2,7/10/22,General Manager Scott Petello is a good egg,Male
+P589,0,1,7/11/22,Quiessence is simply put  beautiful,Male
+P590,3,4,7/12/22,The food is that good,Male
+P591,2,2,7/13/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P592,2,0,7/14/22,I have no idea why some people give bad reviews about this place,Male
+P593,4,5,7/15/22,love the gyro plate,Male
+P594,1,2,7/16/22,Rosie,Male
+P595,1,2,7/17/22,General Manager Scott Petello is a good egg,Male
+P596,2,3,7/18/22,Quiessence is simply put  beautiful,Male
+P597,1,2,7/19/22,The food is that good,Male
+P598,10,6,7/20/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P599,2,1,7/21/22,I have no idea why some people give bad reviews about this place,Male
+P600,0,1,7/22/22,love the gyro plate,Male
+P601,0,0,7/23/22,Rosie,Male
+P602,0,0,7/24/22,General Manager Scott Petello is a good egg,Male
+P603,0,1,7/25/22,Quiessence is simply put  beautiful,Male
+P604,0,0,7/26/22,The food is that good,Male
+P605,1,3,7/27/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P606,1,1,7/28/22,I have no idea why some people give bad reviews about this place,Male
+P607,0,1,7/29/22,love the gyro plate,Male
+P608,1,1,7/30/22,Rosie,Male
+P609,0,0,7/31/22,General Manager Scott Petello is a good egg,Male
+P610,6,3,8/1/22,Quiessence is simply put  beautiful,Male
+P611,3,1,8/2/22,The food is that good,Male
+P612,14,11,8/3/22,My wife took me here on my birthday for breakfast and it was excellent,Male
+P613,18,26,8/4/22,I have no idea why some people give bad reviews about this place,Female
+P614,4,4,8/5/22,love the gyro plate,Female
+P615,17,16,8/6/22,Rosie,Female
+P616,6,6,8/7/22,General Manager Scott Petello is a good egg,Female
+P617,36,33,8/8/22,Quiessence is simply put  beautiful,Female
+P618,40,35,8/9/22,The food is that good,Female
+P619,38,31,8/10/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P620,31,27,8/11/22,I have no idea why some people give bad reviews about this place,Female
+P621,31,33,8/12/22,love the gyro plate,Female
+P622,29,33,8/13/22,Rosie,Female
+P623,38,27,8/14/22,General Manager Scott Petello is a good egg,Female
+P624,5,10,8/15/22,Quiessence is simply put  beautiful,Female
+P625,11,6,8/16/22,The food is that good,Female
+P626,10,6,8/17/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P627,12,11,8/18/22,I have no idea why some people give bad reviews about this place,Female
+P628,7,6,8/19/22,love the gyro plate,Female
+P629,10,9,8/20/22,Rosie,Female
+P630,11,11,8/21/22,General Manager Scott Petello is a good egg,Female
+P631,8,4,8/22/22,Quiessence is simply put  beautiful,Female
+P632,13,11,8/23/22,The food is that good,Female
+P633,5,7,8/24/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P634,6,8,8/25/22,I have no idea why some people give bad reviews about this place,Female
+P635,14,8,8/26/22,love the gyro plate,Female
+P636,6,15,8/27/22,Rosie,Female
+P637,2,4,8/28/22,General Manager Scott Petello is a good egg,Female
+P638,15,7,8/29/22,Quiessence is simply put  beautiful,Female
+P639,0,1,8/30/22,The food is that good,Female
+P640,14,20,8/31/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P641,0,5,9/1/22,I have no idea why some people give bad reviews about this place,Female
+P642,5,3,9/2/22,love the gyro plate,Female
+P643,0,0,9/3/22,Rosie,Female
+P644,0,0,9/4/22,General Manager Scott Petello is a good egg,Female
+P646,0,0,9/5/22,Quiessence is simply put  beautiful,Female
+P647,0,0,9/6/22,The food is that good,Female
+P649,0,0,9/7/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P650,0,0,9/8/22,I have no idea why some people give bad reviews about this place,Female
+P651,0,0,9/9/22,love the gyro plate,Female
+P652,0,0,9/10/22,Rosie,Female
+P653,0,0,9/11/22,General Manager Scott Petello is a good egg,Female
+P654,0,0,9/12/22,Quiessence is simply put  beautiful,Female
+P655,0,1,9/13/22,The food is that good,Female
+P656,0,0,9/14/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P657,0,0,9/15/22,I have no idea why some people give bad reviews about this place,Female
+P658,0,0,9/16/22,love the gyro plate,Female
+P659,0,0,9/17/22,Rosie,Female
+P660,0,0,9/18/22,General Manager Scott Petello is a good egg,Female
+P661,0,0,9/19/22,Quiessence is simply put  beautiful,Female
+P662,0,0,9/20/22,The food is that good,Female
+P663,0,0,9/21/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P664,0,0,9/22/22,I have no idea why some people give bad reviews about this place,Female
+P665,0,0,9/23/22,love the gyro plate,Female
+P666,1,0,9/24/22,Rosie,Female
+P667,1,0,9/25/22,General Manager Scott Petello is a good egg,Female
+P668,1,0,9/26/22,Quiessence is simply put  beautiful,Female
+P669,0,0,9/27/22,The food is that good,Female
+P670,0,0,9/28/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P671,1,0,9/29/22,I have no idea why some people give bad reviews about this place,Female
+P672,0,0,9/30/22,love the gyro plate,Female
+P673,1,3,10/1/22,Rosie,Female
+P674,4,4,10/2/22,General Manager Scott Petello is a good egg,Female
+P675,2,1,10/3/22,Quiessence is simply put  beautiful,Female
+P676,1,1,10/4/22,The food is that good,Female
+P677,0,1,10/5/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P678,0,0,10/6/22,I have no idea why some people give bad reviews about this place,Female
+P679,1,0,10/7/22,love the gyro plate,Female
+P680,0,0,10/8/22,Rosie,Female
+P681,0,1,10/9/22,General Manager Scott Petello is a good egg,Female
+P682,0,0,10/10/22,Quiessence is simply put  beautiful,Female
+P683,0,0,10/11/22,The food is that good,Female
+P684,0,0,10/12/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P685,0,0,10/13/22,I have no idea why some people give bad reviews about this place,Female
+P686,2,4,10/14/22,love the gyro plate,Female
+P687,1,0,10/15/22,Rosie,Female
+P688,0,0,10/16/22,General Manager Scott Petello is a good egg,Female
+P689,0,0,10/17/22,Quiessence is simply put  beautiful,Female
+P690,0,0,10/18/22,The food is that good,Female
+P691,0,0,10/19/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P692,0,2,10/20/22,I have no idea why some people give bad reviews about this place,Female
+P693,2,3,10/21/22,love the gyro plate,Female
+P694,0,0,10/22/22,Rosie,Female
+P695,0,0,10/23/22,General Manager Scott Petello is a good egg,Female
+P696,0,0,10/24/22,Quiessence is simply put  beautiful,Female
+P697,0,0,10/25/22,The food is that good,Female
+P698,2,2,10/26/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P699,0,0,10/27/22,I have no idea why some people give bad reviews about this place,Female
+P700,1,0,10/28/22,love the gyro plate,Female
+P701,5,3,10/29/22,Rosie,Female
+P702,3,1,10/30/22,General Manager Scott Petello is a good egg,Female
+P703,2,3,10/31/22,Quiessence is simply put  beautiful,Female
+P704,0,0,11/1/22,The food is that good,Female
+P705,1,3,11/2/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P706,0,0,11/3/22,I have no idea why some people give bad reviews about this place,Female
+P707,1,0,11/4/22,love the gyro plate,Female
+P708,0,1,11/5/22,Rosie,Female
+P711,0,0,11/6/22,General Manager Scott Petello is a good egg,Female
+P712,0,0,11/7/22,Quiessence is simply put  beautiful,Female
+P713,0,2,11/8/22,The food is that good,Female
+P714,0,0,11/9/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P715,0,0,11/10/22,I have no idea why some people give bad reviews about this place,Female
+P716,1,0,11/11/22,love the gyro plate,Female
+P717,0,0,11/12/22,Rosie,Female
+P718,0,2,11/13/22,General Manager Scott Petello is a good egg,Female
+P719,0,0,11/14/22,Quiessence is simply put  beautiful,Female
+P720,0,0,11/15/22,The food is that good,Female
+P721,0,0,11/16/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P722,0,0,11/17/22,I have no idea why some people give bad reviews about this place,Female
+P724,0,0,11/18/22,love the gyro plate,Female
+P726,0,1,11/19/22,Rosie,Female
+P727,2,0,11/20/22,General Manager Scott Petello is a good egg,Female
+P728,1,0,11/21/22,Quiessence is simply put  beautiful,Female
+P729,0,0,11/22/22,The food is that good,Female
+P730,0,1,11/23/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P731,0,0,11/24/22,I have no idea why some people give bad reviews about this place,Female
+P732,0,1,11/25/22,love the gyro plate,Female
+P733,0,0,11/26/22,Rosie,Female
+P734,1,0,11/27/22,General Manager Scott Petello is a good egg,Female
+P735,0,0,11/28/22,Quiessence is simply put  beautiful,Female
+P736,1,1,11/29/22,The food is that good,Female
+P737,0,0,11/30/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P738,0,0,12/1/22,I have no idea why some people give bad reviews about this place,Female
+P739,0,0,12/2/22,love the gyro plate,Female
+P740,0,0,12/3/22,Rosie,Female
+P741,0,0,12/4/22,General Manager Scott Petello is a good egg,Female
+P742,0,0,12/5/22,Quiessence is simply put  beautiful,Female
+P743,1,1,12/6/22,The food is that good,Female
+P744,0,0,12/7/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P745,2,10,12/8/22,I have no idea why some people give bad reviews about this place,Female
+P746,1,0,12/9/22,love the gyro plate,Female
+P747,1,1,12/10/22,Rosie,Female
+P748,0,1,12/11/22,General Manager Scott Petello is a good egg,Female
+P749,1,0,12/12/22,Quiessence is simply put  beautiful,Female
+P750,0,0,12/13/22,The food is that good,Female
+P751,0,2,12/14/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P752,4,0,12/15/22,I have no idea why some people give bad reviews about this place,Female
+P753,1,0,12/16/22,love the gyro plate,Female
+P754,0,0,12/17/22,Rosie,Female
+P755,0,0,12/18/22,General Manager Scott Petello is a good egg,Female
+P756,0,0,12/19/22,Quiessence is simply put  beautiful,Female
+P757,0,0,12/20/22,The food is that good,Female
+P758,0,0,12/21/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P759,0,0,12/22/22,I have no idea why some people give bad reviews about this place,Female
+P760,0,0,12/23/22,love the gyro plate,Female
+P761,0,0,12/24/22,Rosie,Female
+P762,2,3,12/25/22,General Manager Scott Petello is a good egg,Female
+P763,0,0,12/26/22,Quiessence is simply put  beautiful,Female
+P764,1,2,12/27/22,The food is that good,Female
+P765,0,0,12/28/22,My wife took me here on my birthday for breakfast and it was excellent,Female
+P766,0,1,12/29/22,I have no idea why some people give bad reviews about this place,Female
+P767,0,0,12/30/22,love the gyro plate,Female
+P768,0,0,12/31/22,Rosie,Female
+P769,0,0,1/1/23,General Manager Scott Petello is a good egg,Female
+P770,2,0,1/2/23,Quiessence is simply put  beautiful,Female
+P771,0,0,1/3/23,The food is that good,Female
+P772,0,0,1/4/23,My wife took me here on my birthday for breakfast and it was excellent,Female
+P773,0,0,1/5/23,I have no idea why some people give bad reviews about this place,Female
+P774,0,0,1/6/23,love the gyro plate,Female
+P775,0,0,1/7/23,Rosie,Female
+P776,0,0,1/8/23,General Manager Scott Petello is a good egg,Female
+P777,0,0,1/9/23,Quiessence is simply put  beautiful,Female
+P778,0,0,1/10/23,The food is that good,Female
+P779,0,0,1/11/23,My wife took me here on my birthday for breakfast and it was excellent,Female
+P780,0,0,1/12/23,I have no idea why some people give bad reviews about this place,Female
+P781,9,13,1/13/23,love the gyro plate,Female
+P782,5,7,1/14/23,Rosie,Female
+P783,15,12,1/15/23,General Manager Scott Petello is a good egg,Female
+P784,3,1,1/16/23,Quiessence is simply put  beautiful,Female
+P785,3,1,1/17/23,The food is that good,Female
+P786,1,2,1/18/23,My wife took me here on my birthday for breakfast and it was excellent,Female
+P787,1,0,1/19/23,I have no idea why some people give bad reviews about this place,Female
+P788,4,3,1/20/23,love the gyro plate,Female
+P789,2,1,1/21/23,Rosie,Female
+P790,3,1,1/22/23,General Manager Scott Petello is a good egg,Female
+P791,4,3,1/23/23,Quiessence is simply put  beautiful,Female
+P792,0,1,1/24/23,The food is that good,Female
+P793,0,1,1/25/23,My wife took me here on my birthday for breakfast and it was excellent,Female
+P794,0,0,1/26/23,I have no idea why some people give bad reviews about this place,Female
+P795,0,0,1/27/23,love the gyro plate,Female
+P796,2,5,1/28/23,Rosie,Female
+P797,2,3,1/29/23,General Manager Scott Petello is a good egg,Female
+P798,6,0,1/30/23,Quiessence is simply put  beautiful,Female
+P799,3,3,1/31/23,The food is that good,Female
+P800,3,2,2/1/23,My wife took me here on my birthday for breakfast and it was excellent,Female
+P801,3,2,2/2/23,I have no idea why some people give bad reviews about this place,Female
+P802,1,1,2/3/23,love the gyro plate,Female
+P803,3,2,2/4/23,Rosie,Female
+P804,2,2,2/5/23,General Manager Scott Petello is a good egg,Female
+P805,0,6,2/6/23,Quiessence is simply put  beautiful,Female
+P806,4,5,2/7/23,The food is that good,Female
+P807,0,0,2/8/23,My wife took me here on my birthday for breakfast and it was excellent,Female
+P808,0,3,2/9/23,I have no idea why some people give bad reviews about this place,Female
+P809,0,1,2/10/23,love the gyro plate,Female
+P810,0,0,2/11/23,Rosie,Female
+P811,5,1,2/12/23,General Manager Scott Petello is a good egg,Female
+P812,3,2,2/13/23,Quiessence is simply put  beautiful,Female
+P813,1,1,2/14/23,The food is that good,Female
+P814,4,2,2/15/23,My wife took me here on my birthday for breakfast and it was excellent,Female
+P815,0,0,2/16/23,I have no idea why some people give bad reviews about this place,Female
+P816,0,1,2/17/23,love the gyro plate,Female
+P817,1,0,2/18/23,Rosie,Female
+P818,0,0,2/19/23,General Manager Scott Petello is a good egg,Female
